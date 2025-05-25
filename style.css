@@ -118,12 +118,25 @@ nav ul li a {
     object-fit: cover; /* Đảm bảo video hiển thị đúng */
    
 }
+video {
+    width: 70%; /* Giữ kích thước phù hợp trên máy tính */
+    max-width: 800px;
+    height: auto;
+}
+
+
 
 .video-container {
     display: flex;
     justify-content: center; /* Căn giữa theo chiều ngang */
     align-items: center; /* Căn giữa theo chiều dọc */
     height: 70vh; /* Chiều cao toàn màn hình */
+}
+
+@media (max-width: 768px) {
+    video {
+        width: 90%; /* Giảm kích thước video trên điện thoại */
+    }
 }
 
 
@@ -276,6 +289,9 @@ padding: 10px;
     .highlight-texttt {
         display: block; /* Đảm bảo chữ xuống dòng */
         margin-bottom: 10px;
+         font-size: 14px; /* Giảm kích thước cho di động */
+
+
     }
 }
 
@@ -334,6 +350,10 @@ padding: 10px;
 .highlight-texttt {
     color: #ffffff; /* Màu cam nổi bật */
     font-weight: normal; /* Làm chữ đậm hơn */
+    font-size: 16px;
+    line-height: 1.6; /* Tăng khoảng cách dòng để dễ đọc */
+
+
 }
 
 .highlight-textttt {
