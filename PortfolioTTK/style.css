@@ -1,0 +1,439 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+}
+
+nav {
+    position: fixed; /* Giữ cố định khi cuộn trang */
+    top: 0; /* Đặt ở trên cùng */
+    left: 0;
+    width: 98.5%; /* Trải dài toàn bộ trang */
+    padding: 10px;
+        background: #f8f9fa;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Đảm bảo hiển thị trên nội dung khác */
+}
+
+nav .logo img {
+    width: 60px; /* Điều chỉnh kích thước logo */
+    height: auto;
+}
+
+.project {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+/* Lớp nền - hiển thị bình thường */
+.layer1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Lớp thứ 2 - ban đầu ẩn đi */
+.layer2 {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+}
+.nenmaytinh img {
+    width: 100%; /* Chiếm toàn bộ chiều rộng trang */
+    height: auto; /* Giữ nguyên tỷ lệ ảnh */
+    display: block;
+}
+/* Khi di chuột vào `.project`, lớp 2 sẽ hiển thị */
+.project:hover .layer2 {
+    opacity: 1;
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+#avatar-video {
+    width: 250px; /* Điều chỉnh kích thước vòng tròn */
+    height: 212px;
+    border-radius: 50%; /* Biến video thành hình tròn */
+    object-fit: cover; /* Đảm bảo video hiển thị đúng */
+    overflow: hidden; /* Cắt phần ngoài vòng tròn */
+}
+
+#banhang-video {
+    width: 1050px; /* Điều chỉnh kích thước */
+    height: 600px;
+    border-radius: 3px; /* Nếu muốn video có góc bo tròn */
+    object-fit: cover; /* Đảm bảo video hiển thị đúng */
+   
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 100vh; /* Chiều cao toàn màn hình */
+}
+
+.container {
+    max-width: 1050px; /* Giới hạn chiều rộng nội dung */
+    margin: 0 auto; /* Căn giữa nội dung */
+    padding: 20px; /* Tạo khoảng cách hai bên */
+}
+header {
+    text-align: center;
+    padding: 70px;
+    color: black;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+#about {
+    word-wrap: break-word; /* Xuống dòng nếu chữ quá dài */
+    background: #00aa03; /* Nền tím */
+    color: white; /* Chữ màu trắng */
+    text-align: center; /* Căn giữa nội dung */
+    padding: 150px;
+    font-family: "Arial", sans-serif; /* Chọn phông chữ */
+    font-size: 20px; /* Điều chỉnh cỡ chữ */
+    position: relative;
+    z-index: 1;
+
+
+}
+
+#aboutt {
+    word-wrap: break-word; /* Xuống dòng nếu chữ quá dài */
+    background: #00aa03; /* Nền tím */
+    color: white; /* Chữ màu trắng */
+    text-align: center; /* Căn giữa nội dung */
+    padding: 100px;
+    font-family: "Arial", sans-serif; /* Chọn phông chữ */
+    font-size: 20px; /* Điều chỉnh cỡ chữ */
+    position: relative;
+    z-index: 1;
+
+
+}
+.logo a {
+    display: inline-block;
+}
+
+.logo-image {
+    width: 80px; /* Điều chỉnh kích thước logo */
+    height: auto; /* Giữ tỷ lệ ảnh */
+}
+/* Các ô chèn lên phần tím */
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    top: -100px; /* Kéo lên chèn vào phần xanh */
+        z-index: 2;
+
+}
+.boxess {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    top: 135px; /* Kéo xuống trèn vào phần xanh */
+        z-index: 2;
+
+}
+
+.boxessss {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    top: 90px; /* Kéo xuống trèn vào phần xanh */
+        z-index: 2;
+
+}
+.boxesss {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+
+}
+.box {
+    background: white;
+    padding: 20px;
+    width: 270px;
+        height: 600px;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.boxx {
+    background: rgb(0, 91, 124);
+    padding: 20px;
+    width: 1200px;
+    height: 130px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    display: flex; /* Kích hoạt chế độ flex */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+}
+.boxxx {
+    background: none;
+    padding: 20px;
+    width: 1200px;
+    height: 130px;
+    text-align: center;
+    display: flex; /* Kích hoạt chế độ flex */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+}
+.box img.box-icon {
+    width: 60px; /* Đặt kích thước ảnh */
+    height: 60px; /* Đảm bảo hình ảnh là hình vuông trước khi bo tròn */
+    border-radius: 10%; /* Làm cho ảnh thành hình tròn */
+    object-fit: cover; /* Cắt ảnh để vừa với hình tròn mà không bị méo */
+    display: block;
+    margin: 0 auto; /* Căn giữa ảnh */
+}
+
+.box img.box-iconn {
+    width: 80px; /* Đặt kích thước ảnh */
+    height: 60px; /* Đảm bảo hình ảnh là hình vuông trước khi bo tròn */
+    border-radius: 10%; /* Làm cho ảnh thành hình tròn */
+    object-fit: cover; /* Cắt ảnh để vừa với hình tròn mà không bị méo */
+    display: block;
+    margin: 0 auto; /* Căn giữa ảnh */
+}
+.box img.box-iconnn {
+    width: 70px; /* Đặt kích thước ảnh */
+    height: 65px; /* Đảm bảo hình ảnh là hình vuông trước khi bo tròn */
+    border-radius: 10%; /* Làm cho ảnh thành hình tròn */
+    object-fit: cover; /* Cắt ảnh để vừa với hình tròn mà không bị méo */
+    display: block;
+    margin: 0 auto; /* Căn giữa ảnh */
+}
+
+.highlight-text {
+    color: #00a80e; /* Màu cam nổi bật */
+    font-weight: bold; /* Làm chữ đậm hơn */
+}
+#projects {
+    text-align: center;
+
+}
+
+.highlight-textt {
+    color: #ffffff; /* Màu cam nổi bật */
+    font-weight: bold; /* Làm chữ đậm hơn */
+
+}
+
+.highlight-texttt {
+    color: #ffffff; /* Màu cam nổi bật */
+    font-weight: normal; /* Làm chữ đậm hơn */
+}
+
+.highlight-textttt {
+    color: black; /* Màu cam nổi bật */
+    font-weight: bold; /* Làm chữ đậm hơn */
+
+}
+section {
+    padding: 50px;
+}
+
+.project-container {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+            justify-content: center;
+
+}
+
+.project {
+    background: white;
+    padding: 20px;
+        border-radius: 8px;
+
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.view-project {
+border-color: white;
+background: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-width: 2px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.view-project:hover {
+    background: #00820b; /* Đổi màu khi hover */
+}
+
+.view-projectt {
+    border-color: white;
+    background: none;
+    color: rgb(255, 255, 255);
+    padding: 25px; /* Giảm kích thước nút */
+    border-width: 2px;
+    border-radius: 50%; /* Biến nút thành hình tròn */
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    background-image: url("hinh/nen\ trang\ email.png");
+    background-size: contain; /* Hiển thị toàn bộ ảnh, không bị mất góc */
+    background-position: center;
+    width: 30px; /* Giảm kích thước nút */
+    height: 30px;
+}
+
+.view-projectt:hover {
+    background-image: url("hinh/nen\ emal.png"); /* Đổi hình khi hover */
+}
+
+
+.view-projectt img {
+    width: 20px;
+    height: 20px;
+    opacity: 1; /* Ảnh ban đầu hiển thị */
+    transition: opacity 0.3s ease-in-out; /* Hiệu ứng mượt */
+}
+
+.view-projectt:hover img {
+    opacity: 0; /* Khi hover, ảnh cũ sẽ ẩn đi */
+}
+
+.view-projecttt {
+    border-color: white;
+    background: none;
+    color: rgb(255, 255, 255);
+    padding: 25px; /* Giảm kích thước nút */
+    border-width: 2px;
+    border-radius: 50%; /* Biến nút thành hình tròn */
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    background-image: url("hinh/in\ trang.png");
+    background-size: contain; /* Hiển thị toàn bộ ảnh, không bị mất góc */
+    background-position: center;
+    width: 30px; /* Giảm kích thước nút */
+    height: 30px;
+}
+
+.view-projecttt:hover {
+    background-image: url("hinh/in\ xanh.png"); /* Đổi hình khi hover */
+}
+
+
+.view-projecttt img {
+    width: 20px;
+    height: 20px;
+    opacity: 1; /* Ảnh ban đầu hiển thị */
+    transition: opacity 0.3s ease-in-out; /* Hiệu ứng mượt */
+}
+
+.view-projecttt:hover img {
+    opacity: 0; /* Khi hover, ảnh cũ sẽ ẩn đi */
+}
+
+.view-projectttt {
+    border-color: white;
+    background: none;
+    color: rgb(255, 255, 255);
+    padding: 25px; /* Giảm kích thước nút */
+    border-width: 2px;
+    border-radius: 50%; /* Biến nút thành hình tròn */
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    background-image: url("hinh/f\ trang1.png");
+    background-size: contain; /* Hiển thị toàn bộ ảnh, không bị mất góc */
+    width: 30px; /* Giảm kích thước nút */
+    height: 30px;
+}
+
+.view-projectttt:hover {
+    background-image: url("hinh/f\ xanh1.png"); /* Đổi hình khi hover */
+}
+
+
+.view-projectttt img {
+    width: 20px;
+    height: 20px;
+    opacity: 1; /* Ảnh ban đầu hiển thị */
+    transition: opacity 0.3s ease-in-out; /* Hiệu ứng mượt */
+}
+
+.view-projectttt:hover img {
+    opacity: 0; /* Khi hover, ảnh cũ sẽ ẩn đi */
+}
+
+.project-content {
+    text-align: center;
+    padding: 50px;
+}
+
+.project-content video {
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-content img {
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-content p {
+    font-size: 18px;
+    line-height: 1.5;
+}
