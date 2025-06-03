@@ -33,7 +33,7 @@ function showProject() {
 </p>
 <div class="video-container">
             <video id="banhang-video" autoplay muted loop playsinline>
-                <source src="video/video ban hang.mp4" type="video/mp4">
+                <source src="video/videobanhang.mp4" type="video/mp4">
             </video>
         </div>                 
 <br />
@@ -48,7 +48,7 @@ function showProject() {
 </p>
 <div class="video-container">
             <video id="banhang-video" autoplay muted loop playsinline>
-                <source src="video/video cham soc khach hang.mp4" type="video/mp4">
+                <source src="video/videochamsoc.mp4" type="video/mp4">
             </video>
         </div>
 
@@ -62,7 +62,7 @@ function showProject() {
 </p>
 <div class="video-container">
             <video id="banhang-video" autoplay muted loop playsinline>
-                <source src="video/video quan tri he thong.mp4" type="video/mp4">
+                <source src="video/videoquanly.mp4" type="video/mp4">
             </video>
         </div>
 
@@ -155,8 +155,12 @@ function showProject2() {
         </nav>
        
                     <label class="highlight-textttt">MTK SHOPPING MOBILE</label> <br /><br /><br />
-                    <label class="highlight-textttt">Chức năng mua sắm và quản lý tài khoản trong ứng dụng MTK Shopping</label><br /><br />
-                    <p>Ứng dụng MTK Shopping mang đến trải nghiệm mua sắm hiện đại và tiện lợi trên di động. Người dùng có thể đăng ký và đăng nhập tài khoản khách hàng, mở ra quyền truy cập vào giỏ hàng cá nhân hóa và các tính năng hỗ trợ mua sắm linh hoạt.
+                    <label class="highlight-textttt">Chức năng bán hàng và quản lý tài khoản</label><br /><br />
+                    <p>Ứng dụng bán đồ nội thất giúp khách hàng dễ dàng tìm kiếm, lựa chọn và đặt mua sản phẩm ngay trên điện thoại. Người dùng có thể duyệt qua danh mục sản phẩm, xem chi tiết từng món, kiểm tra các chương trình khuyến mãi hấp dẫn, thêm sản phẩm vào giỏ hàng và thực hiện thanh toán với nhiều phương thức linh hoạt. Hệ thống hỗ trợ xem lịch sử đơn hàng, cho phép khách hàng theo dõi trạng thái đặt hàng và quản lý giao dịch một cách minh bạch.
+                    <br/>
+                    Ứng dụng được phát triển trên Android, sử dụng XAMPP, PHP, MySQL để quản lý dữ liệu và đảm bảo tốc độ xử lý cao. Nhờ tích hợp API, thông tin sản phẩm luôn được cập nhật theo thời gian thực. Hệ thống cũng tối ưu hóa giao diện giúp trải nghiệm mua sắm trực quan, dễ dàng từ tìm kiếm sản phẩm đến thanh toán.
+
+
 </p>
 <div class="video-container">
             <video id="banhang-video" autoplay muted loop playsinline>
@@ -164,18 +168,27 @@ function showProject2() {
             </video>
         </div>
 
+Khách hàng có thể đăng ký tài khoản cá nhân, giúp việc mua sắm trở nên thuận tiện hơn. Với tài khoản riêng, người dùng có thể lưu danh sách sản phẩm yêu thích, quản lý giỏ hàng và xem lịch sử mua hàng. Hệ thống hỗ trợ đổi mật khẩu, đảm bảo tính bảo mật khi sử dụng.
+<br/>
+Trong quá trình đăng ký, người dùng nhập các thông tin cần thiết như email, mật khẩu, số điện thoại, đảm bảo tính xác thực và bảo vệ tài khoản. Khi cần thay đổi thông tin cá nhân, khách hàng có thể cập nhật tên, địa chỉ giao hàng, nhưng số điện thoại và tài khoản sẽ được bảo mật. Nhờ xác thực qua API, mọi thao tác liên quan đến tài khoản đều an toàn.
 
 
-                    <p>Sau khi đăng nhập, khách hàng có thể lựa chọn nhiều mặt hàng khác nhau, từ đèn, ghế, tivi, tủ lạnh đến kệ sách, và dễ dàng thêm sản phẩm vào giỏ hàng để tiến hành thanh toán. Hệ thống hỗ trợ xác nhận đơn hàng, hiển thị hóa đơn ngay sau giao dịch, giúp khách hàng theo dõi và kiểm tra lại thông tin mua sắm.
+                 
+<br />
+<br />
+<br />
+    <label class="highlight-textttt">Chức năng quản lý sản phẩm và thống kê doanh thu</label><br /><br />
+                    <p>Ứng dụng bán đồ nội thất giúp nhân viên quản lý sản phẩm và theo dõi doanh thu một cách hiệu quả. Chỉ nhân viên được cấp quyền mới có thể thêm, sửa, xóa sản phẩm, cập nhật thông tin hàng hóa và kiểm tra tình hình kinh doanh.
+                    <br/>
+Hệ thống cung cấp biểu đồ thống kê doanh thu theo danh mục sản phẩm, giúp nhân viên đánh giá sản phẩm bán chạy và điều chỉnh chiến lược kinh doanh phù hợp. Các dữ liệu được cập nhật theo thời gian thực, giúp cửa hàng tối ưu hóa hoạt động quản lý và tăng hiệu suất bán hàng.
+
+<br/>
 </p>
-<p>Ngoài ra, ứng dụng tích hợp chức năng đổi mật khẩu và quên mật khẩu, đảm bảo bảo mật tài khoản. Việc thay đổi mật khẩu được xác minh thông qua số điện thoại liên kết với tài khoản, giúp khách hàng quản lý thông tin cá nhân một cách an toàn.
- </p>
- <p>MTK Shopping được phát triển dựa trên HTML, CSS, JavaScript, kết hợp với ASP.NET và SQL Server, tối ưu khả năng lưu trữ và xử lý dữ liệu đơn hàng. Hệ thống thanh toán được liên kết với API ngân hàng, giúp giao dịch diễn ra nhanh chóng và bảo mật.
- </p>
-<br />
-<br />
-<br />
-
+<div class="video-container">
+            <video id="banhang-video" autoplay muted loop playsinline>
+                <source src="video/videoquanlyduan2.mp4" type="video/mp4">
+            </video>
+        </div>
                
 </div>
 
