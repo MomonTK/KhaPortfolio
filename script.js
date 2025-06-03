@@ -27,29 +27,23 @@ function showProject() {
         </nav>
        
                     <label class="highlight-textttt">WEB SHOPPING SECOND HAND MTK</label> <br /><br /><br />
-                    <label class="highlight-textttt">Hệ thống bán hàng trực tuyến MTK Second Hand</label><br /><br />
-                    <p>MTK Second Hand là nền tảng thương mại điện tử hiện đại, giúp khách hàng dễ dàng khám phá và mua sắm các sản phẩm thời trang second-hand chất lượng. Website cung cấp 5 danh mục sản phẩm chính: Shirt, Pant, Watch, Shoes, Jewelry, với đầy đủ thông tin chi tiết, số lượng sao đánh giá và bình luận từ khách hàng.
+                    <label class="highlight-textttt">Chức năng quản lý bán hàng</label><br /><br />
+                    <p>Chức năng quản lý và thống kê giúp tối ưu hóa hoạt động kinh doanh trên nền tảng MTK Second Hand, đảm bảo việc theo dõi đơn hàng, doanh thu và tình trạng sản phẩm một cách chính xác. 
+                    Hệ thống được lập trình bằng HTML, CSS, JavaScript và sử dụng ASP.NET kết hợp SQL Server để quản lý dữ liệu. Người dùng có thể xem chi tiết sản phẩm, thêm vào giỏ hàng và lựa chọn các phương thức thanh toán linh hoạt như COD, chuyển khoản ngân hàng hoặc trả thẻ. Sau khi hoàn tất giao dịch, hệ thống tự động cập nhật hóa đơn và thống kê doanh thu theo thời gian thực, hỗ trợ quản lý hiệu quả. 
 </p>
 <div class="video-container">
             <video id="banhang-video" autoplay muted loop playsinline>
                 <source src="video/video ban hang.mp4" type="video/mp4">
             </video>
-        </div>
-
-
-
-                    <p>Người dùng có thể xem chi tiết sản phẩm, thêm vào giỏ hàng, và tiến hành thanh toán với 3 phương thức linh hoạt: Thanh toán khi nhận hàng, chuyển khoản ngân hàng hoặc trả thẻ. Sau khi hoàn tất giao dịch, hệ thống sẽ hiển thị hóa đơn chi tiết, giúp khách hàng kiểm tra đơn hàng một cách minh bạch.
-</p>
-<p>Website được xây dựng bằng HTML, CSS, JavaScript, kết hợp với ASP.NET và SQL Server để quản lý dữ liệu sản phẩm, đơn hàng và tài khoản người dùng. Quy trình thanh toán được tích hợp API ngân hàng, đảm bảo giao dịch diễn ra nhanh chóng và an toàn.
- </p>
- <p>MTK Second Hand không chỉ là một nền tảng mua sắm, mà còn là giải pháp công nghệ hỗ trợ kinh doanh, tối ưu trải nghiệm người dùng và đem lại sự tiện lợi, minh bạch trong từng giao dịch.
- </p>
+        </div>                 
 <br />
 <br />
 <br />
 
-                    <label class="highlight-textttt">Chức năng chăm sóc khách hàng trong hệ thống MTK Second Hand</label><br /><br />
-                    <p>MTK Second Hand không chỉ là một nền tảng mua sắm mà còn tập trung vào chăm sóc khách hàng, tạo trải nghiệm cá nhân hóa và tiện lợi cho người dùng. Hệ thống cho phép đăng ký tài khoản khách hàng, giúp người dùng có giỏ hàng riêng để lưu trữ các sản phẩm yêu thích.
+                    <label class="highlight-textttt">Chức năng chăm sóc khách hàng</label><br /><br />
+                    <p>Chức năng chăm sóc khách hàng của MTK Second Hand giúp tối ưu hóa trải nghiệm người dùng, đảm bảo hỗ trợ nhanh chóng và hiệu quả. 
+                    Hệ thống cho phép khách hàng đăng ký tài khoản để lưu trữ thông tin cá nhân, theo dõi đơn hàng và quản lý giỏ hàng. Người dùng có thể chỉnh sửa hồ sơ, bao gồm tên, địa chỉ, email, nhưng tài khoản và số điện thoại được bảo mật nhằm đảm bảo an toàn. Chức năng đổi mật khẩu được xác minh qua số điện thoại liên kết, giúp bảo vệ quyền riêng tư. 
+                    Ngoài ra, khách hàng có thể liên hệ trực tiếp với đội ngũ hỗ trợ thông qua hotline để giải đáp thắc mắc và xử lý khiếu nại. Hệ thống được phát triển bằng HTML, CSS, JavaScript, kết hợp với ASP.NET và SQL Server để quản lý dữ liệu, bảo mật thông tin, và tích hợp các giải pháp xác thực giúp giao dịch diễn ra an toàn. 
 </p>
 <div class="video-container">
             <video id="banhang-video" autoplay muted loop playsinline>
@@ -57,38 +51,20 @@ function showProject() {
             </video>
         </div>
 
-
-
-                    <p>Sau khi đăng ký, khách hàng có thể truy cập hồ sơ cá nhân, hiển thị ở góc trên bên phải màn hình. Tại đây, người dùng có thể xem và chỉnh sửa thông tin cá nhân, bao gồm tên, địa chỉ, email, nhưng không thể thay đổi tài khoản và số điện thoại để đảm bảo tính bảo mật. Chức năng đổi mật khẩu được xác minh thông qua số điện thoại liên kết với tài khoản, giúp bảo vệ thông tin cá nhân.
-</p>
-<p>Ngoài hồ sơ cá nhân, hệ thống cung cấp trang quản lý đơn hàng, nơi khách hàng có thể theo dõi tình trạng các đơn hàng đã mua và đánh giá sản phẩm sau khi nhận hàng. Việc đánh giá này giúp nâng cao trải nghiệm cho cộng đồng mua sắm và hỗ trợ cải thiện chất lượng dịch vụ.
- </p>
- <p>MTK Second Hand xây dựng nền tảng chăm sóc khách hàng dựa trên công nghệ HTML, CSS, JavaScript cùng với ASP.NET và SQL Server để quản lý dữ liệu tài khoản, đơn hàng và bảo mật thông tin cá nhân. Hệ thống cũng tích hợp các giải pháp xác thực và mã hóa, đảm bảo an toàn khi khách hàng thay đổi thông tin hoặc thực hiện giao dịch.
- </p>
 <br /><br />
 <br />
 
-                    <label class="highlight-textttt">Hệ thống bán hàng trực tuyến MTK Second Hand</label><br /><br />
-                    <p>MTK Second Hand là nền tảng thương mại điện tử hiện đại, giúp khách hàng dễ dàng khám phá và mua sắm các sản phẩm thời trang second-hand chất lượng. Website cung cấp 5 danh mục sản phẩm chính: Shirt, Pant, Watch, Shoes, Jewelry, với đầy đủ thông tin chi tiết, số lượng sao đánh giá và bình luận từ khách hàng.
+                    <label class="highlight-textttt">Chức năng quản lý hoạt động kinh doanh</label><br /><br />
+                    <p>Chức năng thống kê và quản lý đơn hàng trên hệ thống MTK Second Hand giúp nhân viên giám sát hoạt động kinh doanh, theo dõi tình trạng đơn hàng và doanh thu theo thời gian thực. 
+                    Nhân viên được quyền truy cập các giao diện quản lý để kiểm tra đơn hàng, xử lý trạng thái như "Chưa thanh toán", "Trả hàng" hoặc "Đã hủy", quản lý tài khoản khách hàng và nhân viên, xem kết quả thống kê doanh thu và in báo cáo. Hệ thống được phát triển bằng HTML, CSS, JavaScript và ASP.NET kết hợp với SQL Server để lưu trữ và xử lý thông tin.               
 </p>
 <div class="video-container">
             <video id="banhang-video" autoplay muted loop playsinline>
-                <source src="video/video ban hang.mp4" type="video/mp4">
+                <source src="video/video quan tri he thong.mp4" type="video/mp4">
             </video>
         </div>
 
-
-
-                    <p>Người dùng có thể xem chi tiết sản phẩm, thêm vào giỏ hàng, và tiến hành thanh toán với 3 phương thức linh hoạt: Thanh toán khi nhận hàng, chuyển khoản ngân hàng hoặc trả thẻ. Sau khi hoàn tất giao dịch, hệ thống sẽ hiển thị hóa đơn chi tiết, giúp khách hàng kiểm tra đơn hàng một cách minh bạch.
-</p>
-<p>Website được xây dựng bằng HTML, CSS, JavaScript, kết hợp với ASP.NET và SQL Server để quản lý dữ liệu sản phẩm, đơn hàng và tài khoản người dùng. Quy trình thanh toán được tích hợp API ngân hàng, đảm bảo giao dịch diễn ra nhanh chóng và an toàn.
- </p>
- <p>MTK Second Hand không chỉ là một nền tảng mua sắm, mà còn là giải pháp công nghệ hỗ trợ kinh doanh, tối ưu trải nghiệm người dùng và đem lại sự tiện lợi, minh bạch trong từng giao dịch.
- </p>
-
-        
-
-
+                         
 </div>
 
 <div class="boxessss">

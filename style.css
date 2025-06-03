@@ -120,7 +120,7 @@ nav ul li a {
 }
 video {
     width: 70%; /* Giữ kích thước phù hợp trên máy tính */
-    max-width: 800px;
+    max-width: 1050px;
     height: auto;
 }
 
