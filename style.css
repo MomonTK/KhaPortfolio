@@ -116,25 +116,20 @@ nav ul li a {
     height: 600px;
     border-radius: 3px; /* Nếu muốn video có góc bo tròn */
     object-fit: cover; /* Đảm bảo video hiển thị đúng */
-<<<<<<< HEAD
-   
-=======
-   margin-top: 300px;
 
->>>>>>> d25ec13 (cap nhat lan 2)
 }
 video {
     width: 70%; /* Giữ kích thước phù hợp trên máy tính */
     max-width: 1050px;
-<<<<<<< HEAD
+
     height: auto;
-=======
+
     height: 500px;
     border-radius: 3px; /* Góc bo tròn */
     object-fit: cover; /* Đảm bảo video hiển thị đúng */
 
+margin-top: 150px;
 
->>>>>>> d25ec13 (cap nhat lan 2)
 }
 
 
@@ -144,13 +139,13 @@ video {
     justify-content: center; /* Căn giữa theo chiều ngang */
     align-items: center; /* Căn giữa theo chiều dọc */
     height: 70vh; /* Chiều cao toàn màn hình */
-<<<<<<< HEAD
-=======
+
+
     position: relative; /* Đảm bảo không bị chồng lên nội dung khác */
     margin-bottom: 150px; /* Tạo khoảng cách với văn bản phía dưới */
 
 
->>>>>>> d25ec13 (cap nhat lan 2)
+
 }
 
 @media (max-width: 768px) {

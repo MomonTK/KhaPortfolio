@@ -39,12 +39,7 @@ function showProject() {
 <br />
 <br />
 <br />
-<<<<<<< HEAD
-=======
-<br />
-<br />
-<br />
->>>>>>> d25ec13 (cap nhat lan 2)
+
 
                     <label class="highlight-textttt">Chức năng chăm sóc khách hàng</label><br /><br />
                     <p>Chức năng chăm sóc khách hàng của MTK Second Hand giúp tối ưu hóa trải nghiệm người dùng, đảm bảo hỗ trợ nhanh chóng và hiệu quả. 
@@ -59,12 +54,7 @@ function showProject() {
 
 <br /><br />
 <br />
-<<<<<<< HEAD
-=======
-<br />
-<br />
-<br />
->>>>>>> d25ec13 (cap nhat lan 2)
+
 
                     <label class="highlight-textttt">Chức năng quản lý hoạt động kinh doanh</label><br /><br />
                     <p>Chức năng thống kê và quản lý đơn hàng trên hệ thống MTK Second Hand giúp nhân viên giám sát hoạt động kinh doanh, theo dõi tình trạng đơn hàng và doanh thu theo thời gian thực. 
@@ -78,15 +68,13 @@ function showProject() {
 
                          
 </div>
-<<<<<<< HEAD
 
-=======
 <br />
 <br />
 <br /><br />
 <br />
 <br />
->>>>>>> d25ec13 (cap nhat lan 2)
+
 <div class="boxessss">
         <div class="boxx">
             <h3></h3>
@@ -103,11 +91,8 @@ function showProject() {
         </div>
         </div>
  </section>
-<<<<<<< HEAD
-=======
 
 
->>>>>>> d25ec13 (cap nhat lan 2)
     <section id="aboutt">
         <br/> <br/>
         <div class="logo">
