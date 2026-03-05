@@ -30,7 +30,7 @@ function showProject() {
         Đặc biệt, tôi đã tối ưu hóa các câu truy vấn <b>LINQ</b> để thống kê doanh thu một cách chính xác, hỗ trợ xuất báo cáo định kỳ. Người dùng có thể trải nghiệm quy trình mua hàng khép kín từ khâu chọn sản phẩm, quản lý giỏ hàng đến tích hợp các cổng thanh toán linh hoạt (COD, Bank Transfer).</p>
         
         <div class="video-container">
-            <video id="banhang-video" autoplay muted loop playsinline>
+            <video id="banhang-video" controls autoplay muted loop playsinline>
                 <source src="video/videobanhang.mp4" type="video/mp4">
             </video>
         </div>                 
@@ -41,7 +41,7 @@ function showProject() {
         Thông tin cá nhân và mật khẩu được mã hóa an toàn trong <b>SQL Server</b>. Tôi cũng tự phát triển logic xác thực qua số điện thoại liên kết khi người dùng yêu cầu đổi mật khẩu, giúp giảm thiểu rủi ro bị chiếm đoạt tài khoản. Giao diện được thiết kế bằng <b>JavaScript thuần</b> kết hợp <b>CSS Grid/Flexbox</b> để đảm bảo độ phản hồi (Responsive) tốt nhất.</p>
         
         <div class="video-container">
-            <video id="banhang-video" autoplay muted loop playsinline>
+            <video id="banhang-video" controls autoplay muted loop playsinline>
                 <source src="video/videochamsoc.mp4" type="video/mp4">
             </video>
         </div>
@@ -52,7 +52,7 @@ function showProject() {
         Hệ thống tự động hóa việc cập nhật trạng thái đơn hàng (Chờ xử lý, Đã thanh toán, Hoàn trả) và cập nhật số lượng tồn kho ngay lập tức. Điều này giúp bộ phận vận hành giảm thiểu sai sót thủ công và tăng hiệu suất làm việc lên đáng kể.</p>
         
         <div class="video-container">
-            <video id="banhang-video" autoplay muted loop playsinline>
+            <video id="banhang-video" controls autoplay muted loop playsinline>
                 <source src="video/videoquanly.mp4" type="video/mp4">
             </video>
         </div>
@@ -124,7 +124,7 @@ function showProject2() {
         Tôi đã xử lý việc đồng bộ hóa dữ liệu từ <b>MySQL</b> để thông tin sản phẩm nội thất, giá cả và các chương trình khuyến mãi luôn được cập nhật theo thời gian thực. Trải nghiệm người dùng được tối ưu hóa qua luồng tìm kiếm thông minh và quy trình thanh toán tinh gọn trên thiết bị di động.</p>
         
         <div class="video-container">
-            <video id="banhang-video" autoplay muted loop playsinline>
+            <video id="banhang-video" controls autoplay muted loop playsinline>
                 <source src="video/video-ban-hang-du-an-2.mp4" type="video/mp4">
             </video>
         </div>
@@ -137,7 +137,7 @@ function showProject2() {
         Đặc biệt, hệ thống cung cấp các <b>biểu đồ thống kê doanh thu</b> trực quan, giúp bộ phận quản lý nhận diện xu hướng mua sắm của khách hàng và điều chỉnh chiến lược kinh doanh dựa trên dữ liệu thực tế thu thập được.</p>
         
         <div class="video-container">
-            <video id="banhang-video" autoplay muted loop playsinline>
+            <video id="banhang-video" controls autoplay muted loop playsinline>
                 <source src="video/videoquanlyduan2.mp4" type="video/mp4">
             </video>
         </div>
@@ -208,8 +208,8 @@ function showProject3() {
         
         <div class="video-container">
             <!-- Đặt tên video đồng bộ API của bạn vào đây -->
-            <video id="banhang-video" autoplay muted loop playsinline>
-                <source src="video/video-dong-bo-api.mp4" type="video/mp4">
+            <video id="videoKLTN1" controls autoplay muted loop playsinline>
+                <source src="video/videoKLTN1.mp4" type="video/mp4">
             </video>
         </div>                
         <br /><br /><br />
@@ -220,8 +220,8 @@ function showProject3() {
         
         <div class="video-container">
             <!-- Đặt tên video thao tác trên PC vào đây -->
-            <video id="banhang-video" autoplay muted loop playsinline>
-                <source src="video/video-quan-ly-pc.mp4" type="video/mp4">
+            <video id="videoKLTN2" controls autoplay muted loop playsinline>
+                <source src="video/videoKLTN2.mp4" type="video/mp4">
             </video>
         </div>
         <br /><br /><br />
@@ -230,10 +230,10 @@ function showProject3() {
         <p>App Android đóng vai trò là cầu nối trực tiếp với khách hàng và hỗ trợ nhân viên di động. Tôi sử dụng <b>Kotlin</b> kết hợp với thư viện <b>Retrofit</b> để xử lý giao tiếp API một cách mượt mà và an toàn. 
         Ứng dụng có cơ chế phân quyền (Authorization) thông minh: Khách hàng có thể tìm hiểu menu, đặt bàn trước và thu thập Voucher; trong khi Nhân viên đăng nhập sẽ thấy giao diện riêng để gọi món tại bàn, đăng ký lịch làm việc và thao tác nhập kho ngay trên điện thoại. UI/UX được tuân thủ theo chuẩn <b>Material Design</b> của Google.</p>
         
-        <div class="video-container">
+        <div class="video-phone-container">
             <!-- Đặt tên video thao tác trên App Android vào đây -->
-            <video id="banhang-video" autoplay muted loop playsinline>
-                <source src="video/video-app-android.mp4" type="video/mp4">
+            <video id="videoKLTN3" controls autoplay muted loop playsinline>
+                <source src="video/videoKLTN3.mp4" type="video/mp4">
             </video>
         </div>
     </div>
