@@ -9,6 +9,23 @@ body {
 
 }
 
+.layer2 a {
+    color: white;
+    text-decoration: underline;
+}
+
+.layer1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.layer1 {
+    width: 100%;
+    height: 100%;
+}
+
 nav {
     position: fixed; /* Giữ cố định khi cuộn trang */
     top: 0; /* Đặt ở trên cùng */

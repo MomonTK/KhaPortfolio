@@ -224,7 +224,7 @@ function showProject3() {
                 <source src="video/videoKLTN2.mp4" type="video/mp4">
             </video>
         </div>
-        <br /><br /><br />
+        <br /><br />
 
         <label class="highlight-textttt">3. Ứng dụng Di động Native (Android - Kotlin)</label><br /><br />
         <p>App Android đóng vai trò là cầu nối trực tiếp với khách hàng và hỗ trợ nhân viên di động. Tôi sử dụng <b>Kotlin</b> kết hợp với thư viện <b>Retrofit</b> để xử lý giao tiếp API một cách mượt mà và an toàn. 
@@ -241,6 +241,97 @@ function showProject3() {
     <br /><br /><br /><br /><br /><br />
 
     <!-- Phần Liên hệ và Footer (Giữ nguyên form của bạn) -->
+    <div class="boxessss">
+        <div class="boxx">
+            <p><label class="highlight-textt">BẮT ĐẦU DỰ ÁN MỚI?</label> &nbsp;</p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label class="highlight-texttt">Bạn đang có một ý tưởng tuyệt vời và muốn cùng hợp tác? <br />Ta nên sắp xếp một cuộc gặp mặt. Liên lạc nha</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="view-project" onclick="showProject()">🤙 Let's do this</button>
+        </div>
+    </div>
+
+    <section id="aboutt">
+        <br/> <br/>
+        <div class="logo">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="index.html">
+                <img src="hinh/chu ky K trang.png" alt="Thiết kế" class="logo-image">
+            </a>
+            <p>Living, learning, & leveling up one day at a time.</p>  
+        </div>
+        <div class="boxesss">
+            <div class="boxxx">
+                <button class="view-projectt" onclick="sendEmail()"></button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.linkedin.com/in/thái-kha-23a08a366/" target="_blank">
+                    <button class="view-projecttt"></button> 
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.facebook.com/thai.kha.698629" target="_blank">
+                    <button class="view-projectttt"></button> 
+                </a>
+            </div>
+        </div>
+        <br/>
+        <p><Label class="highlight-textt">Handcrafted by me</Label></p>
+    </section>
+    `;
+    window.scrollTo(0, 0);
+}
+
+function showProject4() {
+    document.body.innerHTML = `
+    <div class="container">
+        <br /><br /><br /><br /><br /><br /><br />
+        <nav>
+            <div class="logo">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="index.html">
+                    <img src="hinh/Logo_ten-removebg-preview.png" alt="Thiết kế" class="logo-image">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Giới thiệu</a></li>
+                <li><a href="index.html">Dự án</a></li>
+                <li><a href="index.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+        
+        <label class="highlight-textttt">TRELLO CLONE - WORKSPACE MANAGEMENT (React, Node.js & MongoDB)</label> <br /><br /><br />
+        
+        <label class="highlight-textttt">1. Kiến trúc Single Source of Truth & Đa góc nhìn (Multi-Views)</label><br /><br />
+        <p>Thách thức lớn nhất của dự án này là việc hiển thị cùng một khối lượng dữ liệu dưới nhiều hình thức khác nhau mà không làm sai lệch trạng thái. Tôi đã xây dựng kiến trúc <b>Single Source of Truth</b> bằng React Hooks, giúp đồng bộ hóa dữ liệu lập tức. Người dùng có thể linh hoạt chuyển đổi giữa 4 dạng xem: <b>Kanban Board</b> (trực quan), <b>Table View</b> (quản lý nhanh), <b>Calendar View</b> (quản lý thời hạn) và <b>Timeline Matrix 2D</b> (phân bổ tài nguyên phức tạp).</p>
+        
+        <div class="video-container">
+            <video id="trello-video-1" controls autoplay muted loop playsinline>
+                <source src="video/trello-views-demo.mp4" type="video/mp4">
+            </video>
+        </div>                
+        <br /><br /><br />
+
+        <label class="highlight-textttt">2. Xử lý Kéo thả (Drag & Drop) & Ma trận Lịch trình 2D</label><br /><br />
+        <p>Thay vì sử dụng các thư viện có sẵn gây nặng ứng dụng, tôi tự code toàn bộ logic Drag & Drop bằng API <b>HTML5 Native</b>. Hệ thống xử lý mượt mà từ việc kéo thả thẻ (Card) giữa các cột, đổi thứ tự danh sách (List), cho đến thao tác kéo thả siêu việt trên <b>Ma trận Lịch trình (Timeline)</b>: khi thả thẻ vào một ô trên lưới, hệ thống tự động tính toán và cập nhật cùng lúc cả Ngày hết hạn (Trục X) và Nhóm phân loại (Trục Y) thông qua Backend Node.js.</p>
+        
+        <div class="video-container">
+            <video id="trello-video-2" controls autoplay muted loop playsinline>
+                <source src="video/trello-drag-drop.mp4" type="video/mp4">
+            </video>
+        </div>
+        <br /><br /><br />
+
+        <label class="highlight-textttt">3. Tối ưu UX/UI & Quản lý Trạng thái phức tạp</label><br /><br />
+        <p>Trải nghiệm người dùng (UX) được đặt lên hàng đầu với các tính năng <b>Optimistic UI Update</b> (Giao diện phản hồi ngay lập tức trước khi Database xác nhận lưu) để triệt tiêu độ trễ. Ứng dụng tích hợp hệ thống Menu ngữ cảnh (Context Menu) bằng chuột phải tự code, Modal chỉnh sửa chi tiết thẻ (Checklist, Đính kèm File/Link, Nhãn màu) và bộ lọc thẻ thông minh. Giao diện được thiết kế pixel-perfect bằng <b>Tailwind CSS</b>, mang lại cảm giác thân thuộc như bản gốc.</p>
+        
+        <div class="video-container">
+            <video id="trello-video-3" controls autoplay muted loop playsinline>
+                <source src="video/trello-card-details.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br />
+
     <div class="boxessss">
         <div class="boxx">
             <p><label class="highlight-textt">BẮT ĐẦU DỰ ÁN MỚI?</label> &nbsp;</p>
