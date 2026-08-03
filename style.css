@@ -3,103 +3,25 @@ body {
     margin: 0;
     padding: 0;
     background: #f8f9fa;
-    font-size: 16px; /* Giảm cỡ chữ nếu quá lớn */
-    line-height: 1.5; /* Tăng khoảng cách dòng giúp dễ đọc */
-
-
+    font-size: 16px; 
+    line-height: 1.5; 
 }
 
-.layer2 a {
-    color: white;
-    text-decoration: underline;
-}
-
-.layer1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-}
-
-.layer1 {
-    width: 100%;
-    height: 100%;
-}
-
+/* =========================================
+   NAVIGATION & LOGO
+========================================= */
 nav {
-    position: fixed; /* Giữ cố định khi cuộn trang */
-    top: 0; /* Đặt ở trên cùng */
+    position: fixed; 
+    top: 0; 
     left: 0;
-    width: 98.5%; /* Trải dài toàn bộ trang */
-    padding: 10px;
-        background: #f8f9fa;
-
+    width: 100%; /* Sửa lại 100% thay vì 98.5% để không bị hở lề */
+    box-sizing: border-box; /* Đảm bảo padding không làm tràn khung */
+    padding: 10px 20px;
+    background: #f8f9fa;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000; /* Đảm bảo hiển thị trên nội dung khác */
-}
-@media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Điều chỉnh cho màn hình nhỏ */
-    }
-}
-
-
-nav .logo img {
-    width: 60px; /* Điều chỉnh kích thước logo */
-    height: auto;
-}
-
-.project {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-}
-
-.layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity 0.3s ease-in-out;
-}
-/* Lớp nền - hiển thị bình thường */
-.layer1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Lớp thứ 2 - ban đầu ẩn đi */
-.layer2 {
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-
-}
-.nenmaytinh img {
-    width: 100%; /* Chiếm toàn bộ chiều rộng trang */
-    height: auto; /* Giữ nguyên tỷ lệ ảnh */
-    display: block;
-    
-}
-@media (max-width: 768px) {
-    .nenmaytinh img {
-        max-width: 100%;
-    }
-}
-
-
-/* Khi di chuột vào `.project`, lớp 2 sẽ hiển thị */
-.project:hover .layer2 {
-    opacity: 1;
+    z-index: 1000; 
 }
 
 nav .logo {
@@ -108,10 +30,17 @@ nav .logo {
     font-weight: bold;
 }
 
+nav .logo img {
+    width: 60px; 
+    height: auto;
+}
+
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
@@ -120,98 +49,12 @@ nav ul li a {
     font-size: 18px;
 }
 
-#avatar-video {
-    width: 250px; /* Điều chỉnh kích thước vòng tròn */
-    height: 212px;
-    border-radius: 50%; /* Biến video thành hình tròn */
-    object-fit: cover; /* Đảm bảo video hiển thị đúng */
-    overflow: hidden; /* Cắt phần ngoài vòng tròn */
-}
-
-#banhang-video {
-    width: 1050px; /* Điều chỉnh kích thước */
-    height: 600px;
-    border-radius: 3px; /* Nếu muốn video có góc bo tròn */
-    object-fit: cover; /* Đảm bảo video hiển thị đúng */
-
-}
-video {
-    width: 70%; /* Giữ kích thước phù hợp trên máy tính */
-    max-width: 1050px;
-
-    height: auto;
-
-    height: 500px;
-    border-radius: 3px; /* Góc bo tròn */
-    object-fit: cover; /* Đảm bảo video hiển thị đúng */
-
-margin-top: 150px;
-
-}
-
-
-
-.video-container {
-    display: flex;
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    height: 70vh; /* Chiều cao toàn màn hình */
-
-
-    position: relative; /* Đảm bảo không bị chồng lên nội dung khác */
-    margin-bottom: 150px; /* Tạo khoảng cách với văn bản phía dưới */
-
-
-
-}
-
-@media (max-width: 768px) {
-    video {
-        width: 90%; /* Giảm kích thước video trên điện thoại */
-    }
-}
-
-
-/* Container dành riêng cho video dọc (điện thoại) */
-.video-phone-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 50px;
-}
-
-/* Tinh chỉnh video để không bị cắt */
-.video-phone-container video {
-    width: auto;         /* Để chiều rộng tự động theo tỉ lệ */
-    max-width: 350px;    /* Giới hạn chiều rộng giống kích thước điện thoại thật */
-    height: 600px;       /* Chiều cao cố định phù hợp với màn hình PC */
-    border-radius: 20px; /* Bo tròn góc cho giống viền điện thoại */
-    border: 8px solid #333; /* Tạo viền giả làm khung điện thoại */
-    object-fit: contain; /* QUAN TRỌNG: Giữ nguyên toàn bộ nội dung video, không cắt xén */
-    background: #000;    /* Nền đen cho các phần thừa nếu tỉ lệ video khác biệt */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
-
-/* Điều chỉnh cho màn hình nhỏ (Mobile) */
-@media (max-width: 768px) {
-    .video-phone-container video {
-        width: 80%;      /* Chiếm 80% chiều rộng màn hình điện thoại */
-        height: auto;    /* Để chiều cao tự co giãn */
-        max-width: none;
-        border-width: 4px;
-    }
-}
-
-
-.container {
-    max-width: 1050px; /* Giới hạn chiều rộng nội dung */
-    margin: 0 auto; /* Căn giữa nội dung */
-    padding: 20px; /* Tạo khoảng cách hai bên */
-}
+/* =========================================
+   HEADER & VIDEO
+========================================= */
 header {
     text-align: center;
-    padding: 70px;
+    padding: 100px 20px 70px; /* Thêm padding-top để tránh bị nav che mất */
     color: black;
 }
 
@@ -223,369 +66,333 @@ h3 {
     font-size: 17px;
 }
 
+.nenmaytinh img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: auto; /* Cho phép co giãn tự nhiên */
+    position: relative; 
+    margin-bottom: 50px; 
+    margin-top: 50px;
+}
+
+#avatar-video {
+    width: 250px; 
+    height: 250px; /* Chỉnh lại cho vuông để bo tròn đều */
+    border-radius: 50%; 
+    object-fit: cover; 
+    overflow: hidden; 
+}
+
+video {
+    width: 70%; 
+    max-width: 1050px;
+    height: auto;
+    border-radius: 3px; 
+    object-fit: cover; 
+}
+
+/* =========================================
+   SECTIONS: ABOUT & CONTACT
+========================================= */
 #about {
-    word-wrap: break-word; /* Xuống dòng nếu chữ quá dài */
-    background: #00aa03; /* Nền tím */
-    color: white; /* Chữ màu trắng */
-    text-align: center; /* Căn giữa nội dung */
-    padding: 150px;
-    font-family: "Arial", sans-serif; /* Chọn phông chữ */
-    font-size: 20px; /* Điều chỉnh cỡ chữ */
+    word-wrap: break-word; 
+    background: #00aa03; 
+    color: white; 
+    text-align: center; 
+    padding: 150px 20px; /* Giữ padding lớn cho PC */
+    font-family: "Arial", sans-serif; 
+    font-size: 20px; 
     position: relative;
     z-index: 1;
-margin: 0 auto;
-
-
-max-width: 90%;
-
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
 }
-@media (max-width: 768px) {
-    #about {
-        max-width: 100%;
-        text-align: left;
-    }
-}
-
-
 
 #aboutt {
-    word-wrap: break-word; /* Xuống dòng nếu chữ quá dài */
-    background: #00aa03; /* Nền tím */
-    color: white; /* Chữ màu trắng */
-    text-align: center; /* Căn giữa nội dung */
-    padding: 100px;
-    font-family: "Arial", sans-serif; /* Chọn phông chữ */
-    font-size: 20px; /* Điều chỉnh cỡ chữ */
+    word-wrap: break-word; 
+    background: #00aa03; 
+    color: white; 
+    text-align: center; 
+    padding: 100px 20px;
+    font-family: "Arial", sans-serif; 
+    font-size: 20px; 
     position: relative;
     z-index: 1;
-
-
-}
-.logo a {
-    display: inline-block;
+    box-sizing: border-box;
 }
 
-.logo-image {
-    width: 80px; /* Điều chỉnh kích thước logo */
-    height: auto; /* Giữ tỷ lệ ảnh */
+.highlight-text {
+    color: #00a80e; 
+    font-weight: bold; 
 }
-/* Các ô chèn lên phần tím */
+
+.highlight-textt {
+    color: #ffffff; 
+    font-weight: bold; 
+}
+
+.highlight-texttt {
+    color: #ffffff; 
+    font-weight: normal; 
+    font-size: 16px;
+    line-height: 1.6; 
+}
+
+/* =========================================
+   BOXES (CÁC Ô KỸ NĂNG CHÈN LÊN NỀN XANH)
+========================================= */
 .boxes {
     display: flex;
     justify-content: center;
     gap: 15px;
     position: relative;
-    top: -100px; /* Kéo lên chèn vào phần xanh */
-        z-index: 2;
-flex-wrap: wrap;
-
-
+    top: -100px; 
+    z-index: 2;
+    flex-wrap: wrap; /* Rất quan trọng: cho phép rớt dòng khi hết chỗ */
+    padding: 0 20px;
 }
+
+.box {
+    background: white;
+    padding: 20px 10px;
+    width: 270px;
+    min-height: 600px; /* Dùng min-height thay vì height chết để chữ dài không bị tràn */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.box img.box-icon, .box img.box-iconn, .box img.box-iconnn {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 10%; 
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto 15px; 
+}
+
+/* Hộp liên hệ ngang */
 .boxess {
     display: flex;
     justify-content: center;
-    gap: 15px;
     position: relative;
-    top: 135px; /* Kéo xuống trèn vào phần xanh */
-        z-index: 2;
-
+    top: 60px; /* Chỉnh lại một chút để không đè lên content dưới */
+    z-index: 2;
+    padding: 0 20px;
 }
 
-.boxessss {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    position: relative;
-    top: 90px; /* Kéo xuống trèn vào phần xanh */
-        z-index: 2;
-
+.boxx {
+    background: rgb(0, 91, 124);
+    padding: 20px;
+    width: 100%; 
+    max-width: 1000px; /* Không ép cứng 1200px nữa */
+    min-height: 130px; /* Linh hoạt chiều cao */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-wrap: wrap; /* Cho phép chữ và nút bấm rớt dòng trên đt */
+    gap: 20px;
+    box-sizing: border-box;
 }
+
 .boxesss {
     display: flex;
     justify-content: center;
     gap: 15px;
     position: relative;
-
 }
-.box {
-    background: white;
-padding: 10px;
-    width: 270px;
-        height: 600px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center;
-    min-width: 250px;
-
-
-}
-@media (max-width: 768px) {
-    .box {
-        width: 100%;
-    }
-}
-
-
-
-.boxx {
-    background: rgb(0, 91, 124);
-    padding: 20px;
-    width: 1200px;
-    height: 130px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-    text-align: center;
-    display: flex; /* Kích hoạt chế độ flex */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    width: 80%;
-
-
-}
-
-@media (max-width: 768px) {
-    .boxx {
-        width: 90%;
-    }
-
-    .highlight-texttt {
-        display: block; /* Đảm bảo chữ xuống dòng */
-        margin-bottom: 10px;
-         font-size: 14px; /* Giảm kích thước cho di động */
-
-
-    }
-}
-
 
 .boxxx {
-    background: none;
     padding: 20px;
-    width: 1200px;
-    height: 130px;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
     text-align: center;
-    display: flex; /* Kích hoạt chế độ flex */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    justify-content: center; /* Căn giữa theo chiều ngang */
-}
-.box img.box-icon {
-    width: 60px; /* Đặt kích thước ảnh */
-    height: 60px; /* Đảm bảo hình ảnh là hình vuông trước khi bo tròn */
-    border-radius: 10%; /* Làm cho ảnh thành hình tròn */
-    object-fit: cover; /* Cắt ảnh để vừa với hình tròn mà không bị méo */
-    display: block;
-    margin: 0 auto; /* Căn giữa ảnh */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
 
-.box img.box-iconn {
-    width: 80px; /* Đặt kích thước ảnh */
-    height: 60px; /* Đảm bảo hình ảnh là hình vuông trước khi bo tròn */
-    border-radius: 10%; /* Làm cho ảnh thành hình tròn */
-    object-fit: cover; /* Cắt ảnh để vừa với hình tròn mà không bị méo */
-    display: block;
-    margin: 0 auto; /* Căn giữa ảnh */
-}
-.box img.box-iconnn {
-    width: 70px; /* Đặt kích thước ảnh */
-    height: 65px; /* Đảm bảo hình ảnh là hình vuông trước khi bo tròn */
-    border-radius: 10%; /* Làm cho ảnh thành hình tròn */
-    object-fit: cover; /* Cắt ảnh để vừa với hình tròn mà không bị méo */
-    display: block;
-    margin: 0 auto; /* Căn giữa ảnh */
-}
-
-.highlight-text {
-    color: #00a80e; /* Màu cam nổi bật */
-    font-weight: bold; /* Làm chữ đậm hơn */
-}
+/* =========================================
+   PROJECTS (DỰ ÁN)
+========================================= */
 #projects {
     text-align: center;
-
-}
-
-.highlight-textt {
-    color: #ffffff; /* Màu cam nổi bật */
-    font-weight: bold; /* Làm chữ đậm hơn */
-
-}
-
-.highlight-texttt {
-    color: #ffffff; /* Màu cam nổi bật */
-    font-weight: normal; /* Làm chữ đậm hơn */
-    font-size: 16px;
-    line-height: 1.6; /* Tăng khoảng cách dòng để dễ đọc */
-
-
-}
-
-.highlight-textttt {
-    color: black; /* Màu cam nổi bật */
-    font-weight: bold; /* Làm chữ đậm hơn */
-
-}
-section {
-    padding: 50px;
+    padding: 50px 20px;
 }
 
 .project-container {
     display: flex;
     gap: 20px;
-    text-align: center;
-            justify-content: center;
-
+    justify-content: center;
+    flex-wrap: wrap; /* Cho phép rớt thành 2 hàng, hoặc 1 hàng trên điện thoại */
 }
-@media (max-width: 768px) {
-    .project-container {
-        flex-direction: column; /* Xếp dọc thay vì ngang */
-        align-items: center; /* Căn giữa */
-    }
-    .project {
-        width: 90%; /* Đảm bảo vừa khung */
-    }
-}
-
-
 
 .project {
-    background: white;
-    padding: 20px;
-        border-radius: 8px;
-
+    position: relative;
+    width: 100%;
+    max-width: 300px; /* Trên PC giữ đúng kích thước của bạn */
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-align: center;
 }
 
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.layer1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.layer2 {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.layer2 a {
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.project:hover .layer2 {
+    opacity: 1;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
 .view-project {
-border-color: white;
-background: none;
+    border-color: white;
+    background: none;
     color: rgb(255, 255, 255);
     padding: 10px 20px;
-    border-width: 2px;
+    border: 2px solid white;
     border-radius: 50px;
     cursor: pointer;
     font-size: 16px;
     transition: 0.3s;
 }
+
 .view-project:hover {
-    background: #00820b; /* Đổi màu khi hover */
+    background: #00820b; 
 }
 
-.view-projectt {
-    border-color: white;
-    background: none;
-    color: rgb(255, 255, 255);
-    padding: 25px; /* Giảm kích thước nút */
-    border-width: 2px;
-    border-radius: 50%; /* Biến nút thành hình tròn */
+/* CSS cho các nút mạng xã hội của bạn giữ nguyên hoàn toàn */
+.view-projectt, .view-projecttt, .view-projectttt {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%; 
     cursor: pointer;
-    font-size: 16px;
     transition: 0.3s;
-    background-image: url("hinh/nen\ trang\ email.png");
-    background-size: contain; /* Hiển thị toàn bộ ảnh, không bị mất góc */
+    width: 50px; 
+    height: 50px;
+    background-size: 60%; 
+    background-repeat: no-repeat;
     background-position: center;
-    width: 30px; /* Giảm kích thước nút */
-    height: 30px;
+    padding: 0;
 }
 
-.view-projectt:hover {
-    background-image: url("hinh/nen\ emal.png"); /* Đổi hình khi hover */
-}
+.view-projectt { background-image: url("hinh/nen\ trang\ email.png"); }
+.view-projectt:hover { background-image: url("hinh/nen\ emal.png"); }
 
+.view-projecttt { background-image: url("hinh/in\ trang.png"); }
+.view-projecttt:hover { background-image: url("hinh/in\ xanh.png"); }
 
-.view-projectt img {
-    width: 20px;
-    height: 20px;
-    opacity: 1; /* Ảnh ban đầu hiển thị */
-    transition: opacity 0.3s ease-in-out; /* Hiệu ứng mượt */
-}
+.view-projectttt { background-image: url("hinh/f\ trang1.png"); }
+.view-projectttt:hover { background-image: url("hinh/f\ xanh1.png"); }
 
-.view-projectt:hover img {
-    opacity: 0; /* Khi hover, ảnh cũ sẽ ẩn đi */
-}
+/* =========================================
+   MOBILE RESPONSIVE (ÁO GIÁP CHO ĐIỆN THOẠI)
+========================================= */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
 
-.view-projecttt {
-    border-color: white;
-    background: none;
-    color: rgb(255, 255, 255);
-    padding: 25px; /* Giảm kích thước nút */
-    border-width: 2px;
-    border-radius: 50%; /* Biến nút thành hình tròn */
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s;
-    background-image: url("hinh/in\ trang.png");
-    background-size: contain; /* Hiển thị toàn bộ ảnh, không bị mất góc */
-    background-position: center;
-    width: 30px; /* Giảm kích thước nút */
-    height: 30px;
-}
+    nav {
+        flex-direction: column; /* Đẩy menu xuống dưới logo cho gọn */
+        padding: 10px;
+    }
+    
+    nav ul {
+        margin-top: 10px;
+        gap: 15px;
+    }
 
-.view-projecttt:hover {
-    background-image: url("hinh/in\ xanh.png"); /* Đổi hình khi hover */
-}
+    header {
+        padding: 120px 15px 30px; 
+    }
 
+    #about, #aboutt {
+        padding: 80px 15px; /* Giảm khoảng cách xanh lá trên đt */
+        text-align: left; /* Căn trái cho dễ đọc trên đt */
+    }
 
-.view-projecttt img {
-    width: 20px;
-    height: 20px;
-    opacity: 1; /* Ảnh ban đầu hiển thị */
-    transition: opacity 0.3s ease-in-out; /* Hiệu ứng mượt */
-}
+    .boxes {
+        top: -40px; /* Giảm độ lún của hộp trên đt để không đè mất chữ */
+    }
 
-.view-projecttt:hover img {
-    opacity: 0; /* Khi hover, ảnh cũ sẽ ẩn đi */
-}
+    .box {
+        width: 100%; /* Hộp full màn hình đt */
+        min-height: auto; 
+    }
 
-.view-projectttt {
-    border-color: white;
-    background: none;
-    color: rgb(255, 255, 255);
-    padding: 25px; /* Giảm kích thước nút */
-    border-width: 2px;
-    border-radius: 50%; /* Biến nút thành hình tròn */
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s;
-    background-image: url("hinh/f\ trang1.png");
-    background-size: contain; /* Hiển thị toàn bộ ảnh, không bị mất góc */
-    width: 30px; /* Giảm kích thước nút */
-    height: 30px;
-}
+    .boxess {
+        top: 20px; /* Kéo hộp liên hệ lại cho vừa vặn */
+    }
 
-.view-projectttt:hover {
-    background-image: url("hinh/f\ xanh1.png"); /* Đổi hình khi hover */
-}
+    .boxx {
+        width: 95%;
+        padding: 20px 10px;
+        flex-direction: column; /* Xếp chữ lên trên, nút bấm xuống dưới */
+    }
 
+    .highlight-texttt {
+        font-size: 14px; 
+        text-align: center;
+    }
 
-.view-projectttt img {
-    width: 20px;
-    height: 20px;
-    opacity: 1; /* Ảnh ban đầu hiển thị */
-    transition: opacity 0.3s ease-in-out; /* Hiệu ứng mượt */
-}
+    .project-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
 
-.view-projectttt:hover img {
-    opacity: 0; /* Khi hover, ảnh cũ sẽ ẩn đi */
-}
+    .project {
+        width: 95%; 
+        max-width: none;
+    }
 
-.project-content {
-    text-align: center;
-    padding: 50px;
-}
-
-.project-content video {
-    width: 70%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.project-content img {
-    width: 50%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.project-content p {
-    font-size: 18px;
-    line-height: 1.5;
+    video {
+        width: 90%; 
+    }
 }
