@@ -305,7 +305,7 @@ function showProject4() {
         
         <div class="video-container">
             <video id="trello-video-1" controls autoplay muted loop playsinline>
-                <source src="video/trello-views-demo.mp4" type="video/mp4">
+                <source src="video/trello-vd1.mp4" type="video/mp4">
             </video>
         </div>                
         <br /><br /><br />
@@ -315,7 +315,7 @@ function showProject4() {
         
         <div class="video-container">
             <video id="trello-video-2" controls autoplay muted loop playsinline>
-                <source src="video/trello-drag-drop.mp4" type="video/mp4">
+                <source src="video/trello-vd2.mp4" type="video/mp4">
             </video>
         </div>
         <br /><br /><br />
@@ -325,7 +325,7 @@ function showProject4() {
         
         <div class="video-container">
             <video id="trello-video-3" controls autoplay muted loop playsinline>
-                <source src="video/trello-card-details.mp4" type="video/mp4">
+                <source src="video/trello-vd3.mp4" type="video/mp4">
             </video>
         </div>
     </div>
