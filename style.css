@@ -1,10 +1,21 @@
+/* =========================================
+   GLOBAL STYLES & TYPOGRAPHY
+========================================= */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #f8f9fa;
+    color: #222222;
     font-size: 16px; 
-    line-height: 1.5; 
+    line-height: 1.6; 
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 /* =========================================
@@ -14,14 +25,15 @@ nav {
     position: fixed; 
     top: 0; 
     left: 0;
-    width: 100%; /* Sửa lại 100% thay vì 98.5% để không bị hở lề */
-    box-sizing: border-box; /* Đảm bảo padding không làm tràn khung */
-    padding: 10px 20px;
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 10px 40px;
     background: #f8f9fa;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000; 
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
 }
 
 nav .logo {
@@ -38,15 +50,21 @@ nav .logo img {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
     margin: 0;
     padding: 0;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: #333333;
     font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    color: #00aa03;
 }
 
 /* =========================================
@@ -54,7 +72,7 @@ nav ul li a {
 ========================================= */
 header {
     text-align: center;
-    padding: 100px 20px 70px; /* Thêm padding-top để tránh bị nav che mất */
+    padding: 100px 20px 70px;
     color: black;
 }
 
@@ -76,59 +94,31 @@ h3 {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    height: auto; /* Cho phép co giãn tự nhiên */
+    height: auto; 
     position: relative; 
-    margin-bottom: 50px; 
-    margin-top: 50px;
+    margin: 30px 0;
 }
 
 #avatar-video {
     width: 250px; 
-    height: 250px; /* Chỉnh lại cho vuông để bo tròn đều */
+    height: 250px; 
     border-radius: 50%; 
     object-fit: cover; 
     overflow: hidden; 
 }
 
 video {
-    width: 70%; 
-    max-width: 1050px;
+    width: 100%; 
+    max-width: 1000px;
     height: auto;
-    border-radius: 3px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     object-fit: cover; 
 }
 
 /* =========================================
-   SECTIONS: ABOUT & CONTACT
+   HIGHLIGHT LABELS & TYPOGRAPHY
 ========================================= */
-#about {
-    word-wrap: break-word; 
-    background: #00aa03; 
-    color: white; 
-    text-align: center; 
-    padding: 150px 20px; /* Giữ padding lớn cho PC */
-    font-family: "Arial", sans-serif; 
-    font-size: 20px; 
-    position: relative;
-    z-index: 1;
-    margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-#aboutt {
-    word-wrap: break-word; 
-    background: #00aa03; 
-    color: white; 
-    text-align: center; 
-    padding: 100px 20px;
-    font-family: "Arial", sans-serif; 
-    font-size: 20px; 
-    position: relative;
-    z-index: 1;
-    box-sizing: border-box;
-}
-
 .highlight-text {
     color: #00a80e; 
     font-weight: bold; 
@@ -146,9 +136,34 @@ video {
     line-height: 1.6; 
 }
 
+/* Tiêu đề mục lớn trong Case Study */
+.highlight-textttt {
+    color: #007716; 
+    font-weight: bold; 
+    font-size: 24px;
+    display: inline-block;
+    border-bottom: 2px solid #00aa03;
+    padding-bottom: 4px;
+    margin-top: 10px;
+}
+
 /* =========================================
-   BOXES (CÁC Ô KỸ NĂNG CHÈN LÊN NỀN XANH)
+   SECTION ABOUT & HỘP KỸ NĂNG (TRANG CHỦ)
 ========================================= */
+#about {
+    word-wrap: break-word; 
+    background: #00aa03; 
+    color: white; 
+    text-align: center; 
+    padding: 150px 20px; 
+    font-size: 20px; 
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .boxes {
     display: flex;
     justify-content: center;
@@ -156,17 +171,17 @@ video {
     position: relative;
     top: -100px; 
     z-index: 2;
-    flex-wrap: wrap; /* Rất quan trọng: cho phép rớt dòng khi hết chỗ */
+    flex-wrap: wrap; 
     padding: 0 20px;
 }
 
 .box {
     background: white;
-    padding: 20px 10px;
+    padding: 20px 15px;
     width: 270px;
-    min-height: 600px; /* Dùng min-height thay vì height chết để chữ dài không bị tràn */
+    min-height: 600px; 
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     text-align: center;
     box-sizing: border-box;
 }
@@ -180,30 +195,54 @@ video {
     margin: 0 auto 15px; 
 }
 
-/* Hộp liên hệ ngang */
+/* =========================================
+   HỘP LIÊN HỆ ĐÈ NỬA DƯỚI & FOOTER
+========================================= */
 .boxess {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
-    top: 60px; /* Chỉnh lại một chút để không đè lên content dưới */
-    z-index: 2;
+    z-index: 10;
+    margin-bottom: -70px; /* Lún 50% xuống nền xanh */
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .boxx {
     background: rgb(0, 91, 124);
-    padding: 20px;
+    padding: 30px 40px;
     width: 100%; 
-    max-width: 1000px; /* Không ép cứng 1200px nữa */
-    min-height: 130px; /* Linh hoạt chiều cao */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-    text-align: center;
+    max-width: 950px; 
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
     display: flex; 
     align-items: center; 
-    justify-content: center; 
-    flex-wrap: wrap; /* Cho phép chữ và nút bấm rớt dòng trên đt */
-    gap: 20px;
+    justify-content: space-between; 
+    gap: 25px;
+    box-sizing: border-box;
+}
+
+.boxx-text {
+    text-align: left;
+}
+
+.boxx-text p {
+    margin: 0 0 6px 0;
+}
+
+#aboutt {
+    word-wrap: break-word; 
+    background: #00aa03; 
+    color: white; 
+    text-align: center; 
+    padding-top: 110px; /* Chừa khoảng trống để không bị hộp liên hệ đè mất nội dung */
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px; 
+    position: relative;
+    z-index: 1;
     box-sizing: border-box;
 }
 
@@ -212,21 +251,22 @@ video {
     justify-content: center;
     gap: 15px;
     position: relative;
+    margin-top: 20px;
 }
 
 .boxxx {
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
     width: 100%;
     max-width: 1200px;
-    height: auto;
-    text-align: center;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+    box-sizing: border-box;
 }
 
 /* =========================================
-   PROJECTS (DỰ ÁN)
+   PROJECTS (DỰ ÁN TRANG CHỦ - 3 CỘT TRÊN 1 DÒNG)
 ========================================= */
 #projects {
     text-align: center;
@@ -237,17 +277,22 @@ video {
     display: flex;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap; /* Cho phép rớt thành 2 hàng, hoặc 1 hàng trên điện thoại */
+    flex-wrap: wrap; 
+    max-width: 1100px; /* Giới hạn chiều rộng để giữ bố cục 3 cột đều đẹp */
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .project {
     position: relative;
-    width: 100%;
-    max-width: 300px; /* Trên PC giữ đúng kích thước của bạn */
-    height: 200px;
+    /* Chia chính xác 3 cột: 100% trừ 2 khoảng cách (2 * 20px = 40px) chia cho 3 */
+    flex: 0 0 calc((100% - 40px) / 3); 
+    max-width: 340px; 
+    height: 220px;
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 .layer {
@@ -260,32 +305,66 @@ video {
 }
 
 .layer1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
     display: block;
 }
 
 .layer2 {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.78);
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box;
+    text-align: center;
+}
+
+.layer2 h3 {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 6px 0 10px;
+    font-weight: normal;
 }
 
 .layer2 a {
-    color: white;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.layer2 a:hover {
     text-decoration: underline;
-    margin-bottom: 10px;
 }
 
 .project:hover .layer2 {
     opacity: 1;
+}
+
+/* =========================================
+   RESPONSIVE (TABLET & ĐIỆN THOẠI)
+========================================= */
+/* Tablet: 2 khung trên 1 dòng */
+@media (max-width: 992px) {
+    .project {
+        flex: 0 0 calc((100% - 20px) / 2);
+        max-width: none;
+    }
+}
+
+/* Mobile: 1 khung full màn hình */
+@media (max-width: 768px) {
+    .project {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 200px;
+    }
 }
 
 /* =========================================
@@ -295,44 +374,151 @@ video {
     border-color: white;
     background: none;
     color: rgb(255, 255, 255);
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: 2px solid white;
     border-radius: 50px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 600;
     transition: 0.3s;
+    white-space: nowrap;
 }
 
 .view-project:hover {
     background: #00820b; 
+    border-color: #00820b;
 }
 
-/* CSS cho các nút mạng xã hội của bạn giữ nguyên hoàn toàn */
+/* =========================================
+   SOCIAL BUTTONS (HIỆU ỨNG TRÒN NỀN TRẮNG KHI HOVER)
+========================================= */
 .view-projectt, .view-projecttt, .view-projectttt {
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
     border-radius: 50%; 
     cursor: pointer;
-    transition: 0.3s;
-    width: 50px; 
-    height: 50px;
-    background-size: 60%; 
+    transition: all 0.3s ease;
+    width: 48px; 
+    height: 48px;
+    background-size: 50%; 
     background-repeat: no-repeat;
     background-position: center;
     padding: 0;
+    overflow: hidden; /* Cắt sạch góc vuông của ảnh con, ép viền tròn tuyệt đối */
+    box-sizing: border-box;
 }
 
-.view-projectt { background-image: url("hinh/nen\ trang\ email.png"); }
-.view-projectt:hover { background-image: url("hinh/nen\ emal.png"); }
+/* Khi Hover: Đổi toàn bộ nền hình tròn thành màu trắng */
+.view-projectt:hover, 
+.view-projecttt:hover, 
+.view-projectttt:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    transform: translateY(-2px); /* Nhấc nhẹ nút lên tạo hiệu ứng nổi */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
 
-.view-projecttt { background-image: url("hinh/in\ trang.png"); }
-.view-projecttt:hover { background-image: url("hinh/in\ xanh.png"); }
+/* Trạng thái bình thường: Icon màu trắng */
+.view-projectt { background-image: url("hinh/nen trang email.png"); }
+.view-projecttt { background-image: url("hinh/in trang.png"); }
+.view-projectttt { background-image: url("hinh/f trang1.png"); }
 
-.view-projectttt { background-image: url("hinh/f\ trang1.png"); }
-.view-projectttt:hover { background-image: url("hinh/f\ xanh1.png"); }
+/* Trạng thái Hover: Đổi sang file Icon màu xanh */
+.view-projectt:hover { background-image: url("hinh/nen emal.png"); }
+.view-projecttt:hover { background-image: url("hinh/in xanh.png"); }
+.view-projectttt:hover { background-image: url("hinh/f xanh1.png"); }
+
+/* ==========================================================================
+   CASE STUDY METRICS, TABLES & MEDIA (CHO NỀN SÁNG)
+   ========================================================================== */
+.kpi-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.kpi-card {
+    flex: 1;
+    min-width: 220px;
+    background: #ffffff;
+    padding: 18px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e9ecef;
+    box-sizing: border-box;
+}
+
+.kpi-card.green { border-left: 5px solid #28a745; }
+.kpi-card.blue  { border-left: 5px solid #007bff; }
+.kpi-card.orange { border-left: 5px solid #fd7e14; }
+
+.kpi-value {
+    font-size: 1.6em;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.kpi-card.green .kpi-value { color: #28a745; }
+.kpi-card.blue .kpi-value { color: #007bff; }
+.kpi-card.orange .kpi-value { color: #fd7e14; }
+
+.kpi-label {
+    font-size: 0.9em;
+    color: #555555;
+    line-height: 1.4;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    margin: 25px 0;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e9ecef;
+}
+
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95em;
+}
+
+.project-table th {
+    background: #eef2f5;
+    color: #333333;
+    padding: 12px 16px;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+}
+
+.project-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e9ecef;
+    vertical-align: top;
+    color: #444444;
+}
+
+.project-table tr:hover td {
+    background: #f8fbfd;
+}
+
+.text-green { color: #28a745; font-weight: bold; }
+.text-blue  { color: #007bff; font-weight: bold; }
+.text-orange { color: #fd7e14; font-weight: bold; }
+
+.project-img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9ecef;
+}
 
 /* =========================================
-   MOBILE RESPONSIVE (ÁO GIÁP CHO ĐIỆN THOẠI)
+   MOBILE RESPONSIVE
 ========================================= */
 @media (max-width: 768px) {
     body {
@@ -340,7 +526,7 @@ video {
     }
 
     nav {
-        flex-direction: column; /* Đẩy menu xuống dưới logo cho gọn */
+        flex-direction: column; 
         padding: 10px;
     }
     
@@ -353,33 +539,43 @@ video {
         padding: 120px 15px 30px; 
     }
 
-    #about, #aboutt {
-        padding: 80px 15px; /* Giảm khoảng cách xanh lá trên đt */
-        text-align: left; /* Căn trái cho dễ đọc trên đt */
+    #about {
+        padding: 60px 15px; 
+        text-align: left; 
     }
 
     .boxes {
-        top: -40px; /* Giảm độ lún của hộp trên đt để không đè mất chữ */
+        top: -40px; 
     }
 
     .box {
-        width: 100%; /* Hộp full màn hình đt */
+        width: 100%; 
         min-height: auto; 
     }
 
     .boxess {
-        top: 20px; /* Kéo hộp liên hệ lại cho vừa vặn */
+        margin-bottom: -110px; /* Tăng độ lún trên điện thoại */
     }
 
     .boxx {
-        width: 95%;
-        padding: 20px 10px;
-        flex-direction: column; /* Xếp chữ lên trên, nút bấm xuống dưới */
+        width: 100%;
+        padding: 20px 15px;
+        flex-direction: column; 
+        text-align: center;
+        gap: 15px;
     }
 
-    .highlight-texttt {
-        font-size: 14px; 
+    .boxx-text {
         text-align: center;
+    }
+
+    #aboutt {
+        padding-top: 145px; /* Tránh bị che chữ trên màn hình nhỏ */
+        padding-bottom: 30px;
+    }
+
+    .highlight-textttt {
+        font-size: 20px;
     }
 
     .project-container {
@@ -388,11 +584,19 @@ video {
     }
 
     .project {
-        width: 95%; 
+        width: 100%; 
         max-width: none;
     }
 
     video {
-        width: 90%; 
+        width: 100%; 
+    }
+
+    .kpi-container {
+        flex-direction: column;
+    }
+
+    .kpi-card {
+        min-width: 100%;
     }
 }

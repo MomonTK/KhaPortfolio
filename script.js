@@ -60,41 +60,48 @@ function showProject() {
 
     <br /><br /><br /><br /><br /><br />
 
-    <div class="boxessss">
+   <section id="lienhe">
+    <script src="script.js"></script>
+ <div class="boxess">
         <div class="boxx">
-            <p><label class="highlight-textt">BẮT ĐẦU DỰ ÁN MỚI?</label> &nbsp;</p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label class="highlight-texttt">Bạn đang có một ý tưởng tuyệt vời và muốn cùng hợp tác? <br />Ta nên sắp xếp một cuộc gặp mặt. Liên lạc nha</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="view-project" onclick="showProject()">🤙 Let's do this</button>
-        </div>
-    </div>
+            <h3></h3>
+            <p><label class="highlight-textt">BẮT ĐẦU DỰ ÁN MỚI?</label>  &nbsp;</p>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+<label class="highlight-texttt">Bạn đang có một ý tưởng tuyệt vời và muốn cùng hợp tác? <br />Ta nên sắp xếp một cuộc gặp mặt. Liên lạc nha</label>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+           <button class="view-project" onclick="sendEmail()">🤙 Let's do this</button>
+
+        </div>
+        </div>
+ </section>
     <section id="aboutt">
         <br/> <br/>
         <div class="logo">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="index.html">
-                <img src="hinh/chu ky K trang.png" alt="Thiết kế" class="logo-image">
+
+            <img src="hinh/chu ky K trang.png" alt="Thiết kế" class="logo-image">
+</a>
+ <p>Living, learning, & leveling up one day at a time.</p>  
+        </div>
+
+    <div class="boxesss">
+        <div class="boxxx">
+            <button class="view-projectt" onclick="sendEmail()"></button>
+            <a href="https://www.linkedin.com/in/thái-kha-23a08a366/" target="_blank">
+                <button class="view-projecttt"></button> 
             </a>
-            <p>Living, learning, & leveling up one day at a time.</p>  
+            <a href="https://www.facebook.com/thai.kha.698629" target="_blank">
+                <button class="view-projectttt"></button> 
+            </a>
         </div>
-        <div class="boxesss">
-            <div class="boxxx">
-                <button class="view-projectt" onclick="sendEmail()"></button>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://www.linkedin.com/in/thái-kha-23a08a366/" target="_blank">
-                    <button class="view-projecttt" onclick="showProject()"></button> 
-                </a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://www.facebook.com/thai.kha.698629" target="_blank">
-                    <button class="view-projectttt" onclick="showProject()"></button> 
-                </a>
-            </div>
-        </div>
-        <br/>
-        <p><Label class="highlight-textt">Handcrafted by me</Label></p>
-    </section>
+    </div>
+    <p class="highlight-textt">Handcrafted by me</p>
+</section>
     `;
     window.scrollTo(0, 0);
 }
@@ -143,41 +150,48 @@ function showProject2() {
         </div>
     </div>
 
-    <div class="boxessss">
+    <section id="lienhe">
+    <script src="script.js"></script>
+ <div class="boxess">
         <div class="boxx">
-            <p><label class="highlight-textt">BẮT ĐẦU DỰ ÁN MỚI?</label> &nbsp;</p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label class="highlight-texttt">Bạn đang có một ý tưởng tuyệt vời và muốn cùng hợp tác? <br />Ta nên sắp xếp một cuộc gặp mặt. Liên lạc nha</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="view-project" onclick="showProject()">🤙 Let's do this</button>
-        </div>
-    </div>
+            <h3></h3>
+            <p><label class="highlight-textt">BẮT ĐẦU DỰ ÁN MỚI?</label>  &nbsp;</p>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+<label class="highlight-texttt">Bạn đang có một ý tưởng tuyệt vời và muốn cùng hợp tác? <br />Ta nên sắp xếp một cuộc gặp mặt. Liên lạc nha</label>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+           <button class="view-project" onclick="sendEmail()">🤙 Let's do this</button>
+
+        </div>
+        </div>
+ </section>
     <section id="aboutt">
         <br/> <br/>
         <div class="logo">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="index.html">
-                <img src="hinh/chu ky K trang.png" alt="Thiết kế" class="logo-image">
+
+            <img src="hinh/chu ky K trang.png" alt="Thiết kế" class="logo-image">
+</a>
+ <p>Living, learning, & leveling up one day at a time.</p>  
+        </div>
+
+    <div class="boxesss">
+        <div class="boxxx">
+            <button class="view-projectt" onclick="sendEmail()"></button>
+            <a href="https://www.linkedin.com/in/thái-kha-23a08a366/" target="_blank">
+                <button class="view-projecttt"></button> 
             </a>
-            <p>Living, learning, & leveling up one day at a time.</p>  
+            <a href="https://www.facebook.com/thai.kha.698629" target="_blank">
+                <button class="view-projectttt"></button> 
+            </a>
         </div>
-        <div class="boxesss">
-            <div class="boxxx">
-                <button class="view-projectt" onclick="sendEmail()"></button>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://www.linkedin.com/in/thái-kha-23a08a366/" target="_blank">
-                    <button class="view-projecttt" onclick="showProject()"></button> 
-                </a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://www.facebook.com/thai.kha.698629" target="_blank">
-                    <button class="view-projectttt" onclick="showProject()"></button> 
-                </a>
-            </div>
-        </div>
-        <br/>
-        <p><Label class="highlight-textt">Handcrafted by me</Label></p>
-    </section>
+    </div>
+    <p class="highlight-textt">Handcrafted by me</p>
+</section>
     `;
     window.scrollTo(0, 0);
 }
@@ -240,42 +254,48 @@ function showProject3() {
 
     <br /><br /><br /><br /><br /><br />
 
-    <!-- Phần Liên hệ và Footer (Giữ nguyên form của bạn) -->
-    <div class="boxessss">
+     <section id="lienhe">
+    <script src="script.js"></script>
+ <div class="boxess">
         <div class="boxx">
-            <p><label class="highlight-textt">BẮT ĐẦU DỰ ÁN MỚI?</label> &nbsp;</p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label class="highlight-texttt">Bạn đang có một ý tưởng tuyệt vời và muốn cùng hợp tác? <br />Ta nên sắp xếp một cuộc gặp mặt. Liên lạc nha</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="view-project" onclick="showProject()">🤙 Let's do this</button>
-        </div>
-    </div>
+            <h3></h3>
+            <p><label class="highlight-textt">BẮT ĐẦU DỰ ÁN MỚI?</label>  &nbsp;</p>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+<label class="highlight-texttt">Bạn đang có một ý tưởng tuyệt vời và muốn cùng hợp tác? <br />Ta nên sắp xếp một cuộc gặp mặt. Liên lạc nha</label>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+           <button class="view-project" onclick="sendEmail()">🤙 Let's do this</button>
+
+        </div>
+        </div>
+ </section>
     <section id="aboutt">
         <br/> <br/>
         <div class="logo">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="index.html">
-                <img src="hinh/chu ky K trang.png" alt="Thiết kế" class="logo-image">
+
+            <img src="hinh/chu ky K trang.png" alt="Thiết kế" class="logo-image">
+</a>
+ <p>Living, learning, & leveling up one day at a time.</p>  
+        </div>
+
+    <div class="boxesss">
+        <div class="boxxx">
+            <button class="view-projectt" onclick="sendEmail()"></button>
+            <a href="https://www.linkedin.com/in/thái-kha-23a08a366/" target="_blank">
+                <button class="view-projecttt"></button> 
             </a>
-            <p>Living, learning, & leveling up one day at a time.</p>  
+            <a href="https://www.facebook.com/thai.kha.698629" target="_blank">
+                <button class="view-projectttt"></button> 
+            </a>
         </div>
-        <div class="boxesss">
-            <div class="boxxx">
-                <button class="view-projectt" onclick="sendEmail()"></button>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://www.linkedin.com/in/thái-kha-23a08a366/" target="_blank">
-                    <button class="view-projecttt"></button> 
-                </a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://www.facebook.com/thai.kha.698629" target="_blank">
-                    <button class="view-projectttt"></button> 
-                </a>
-            </div>
-        </div>
-        <br/>
-        <p><Label class="highlight-textt">Handcrafted by me</Label></p>
-    </section>
+    </div>
+    <p class="highlight-textt">Handcrafted by me</p>
+</section>
     `;
     window.scrollTo(0, 0);
 }
@@ -332,20 +352,299 @@ function showProject4() {
 
     <br /><br /><br /><br /><br /><br />
 
-    <div class="boxessss">
+     <section id="lienhe">
+    <script src="script.js"></script>
+ <div class="boxess">
         <div class="boxx">
-            <p><label class="highlight-textt">BẮT ĐẦU DỰ ÁN MỚI?</label> &nbsp;</p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label class="highlight-texttt">Bạn đang có một ý tưởng tuyệt vời và muốn cùng hợp tác? <br />Ta nên sắp xếp một cuộc gặp mặt. Liên lạc nha</label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="view-project" onclick="showProject()">🤙 Let's do this</button>
-        </div>
-    </div>
+            <h3></h3>
+            <p><label class="highlight-textt">BẮT ĐẦU DỰ ÁN MỚI?</label>  &nbsp;</p>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+<label class="highlight-texttt">Bạn đang có một ý tưởng tuyệt vời và muốn cùng hợp tác? <br />Ta nên sắp xếp một cuộc gặp mặt. Liên lạc nha</label>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+           <button class="view-project" onclick="sendEmail()">🤙 Let's do this</button>
+
+        </div>
+        </div>
+ </section>
     <section id="aboutt">
         <br/> <br/>
         <div class="logo">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="index.html">
+
+            <img src="hinh/chu ky K trang.png" alt="Thiết kế" class="logo-image">
+</a>
+ <p>Living, learning, & leveling up one day at a time.</p>  
+        </div>
+
+    <div class="boxesss">
+        <div class="boxxx">
+            <button class="view-projectt" onclick="sendEmail()"></button>
+            <a href="https://www.linkedin.com/in/thái-kha-23a08a366/" target="_blank">
+                <button class="view-projecttt"></button> 
+            </a>
+            <a href="https://www.facebook.com/thai.kha.698629" target="_blank">
+                <button class="view-projectttt"></button> 
+            </a>
+        </div>
+    </div>
+    <p class="highlight-textt">Handcrafted by me</p>
+</section>
+    `;
+    window.scrollTo(0, 0);
+}
+function showProject5() {
+    document.body.innerHTML = `
+    <div class="container">
+        <br /><br /><br /><br /><br /><br /><br />
+        <nav>
+            <div class="logo">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="index.html">
+                    <img src="hinh/Logo_ten-removebg-preview.png" alt="Thiết kế" class="logo-image">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Giới thiệu</a></li>
+                <li><a href="index.html">Dự án</a></li>
+                <li><a href="index.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+       
+        <label class="highlight-textttt">DEPARTMENT-WIDE REPORTING OPTIMIZATION & SUPPLY CHAIN ANALYTICS (Lean Pareto, Power Query, VBA, Power BI & Power Automate)</label> <br /><br /><br />
+        
+        <!-- PHẦN 1: TỔNG QUAN DỰ ÁN & KEY METRICS -->
+        <label class="highlight-textttt">1. Tổng quan Dự án & Tác động Quy mô Lớn (Project Overview & Baseline)</label><br /><br />
+        <p>Tại phòng ban P1 (được bảo trợ bởi <b>Head of PNP</b>), hệ thống báo cáo vận hành vật tư và chuỗi cung ứng gặp tình trạng phình to về khối lượng và phân mảnh nghiêm trọng. Qua khảo sát chẩn đoán toàn diện, toàn bộ phòng ban có <b>52/56 báo cáo</b> đang vận hành thủ công bởi <b>12 Report Owners</b>, bao gồm <b>463 bước công việc (Work Elements)</b> và tiêu tốn tới <b>40.550 phút/tháng (tương đương 676 giờ/tháng)</b>.</p>
+        
+        <p>Với vai trò <b>Data & Process Automation Analyst</b>, tôi đã chủ trì khảo sát định lượng hiện trạng, áp dụng nguyên lý <b>Pareto (Quy luật 80/20)</b> để cô lập nhóm báo cáo trọng yếu chiếm 88.7% khối lượng công việc, từ đó thiết kế giải pháp số hóa toàn diện kết hợp hệ sinh thái <b>Power Query, VBA Engine, Power BI và Power Automate</b>.</p>
+
+        <!-- Thẻ tóm tắt chỉ số KPI thực tế -->
+        <div class="kpi-container">
+            <div class="kpi-card green">
+                <span class="kpi-value">676 Giờ/Tháng</span>
+                <span class="kpi-label">Tổng thời gian vận hành ban đầu trên 52 báo cáo (40.550 phút)</span>
+            </div>
+            <div class="kpi-card blue">
+                <span class="kpi-value">88.7% Tải Công Việc</span>
+                <span class="kpi-label">Khối lượng tập trung tại Top 6 báo cáo trọng điểm (35.972 phút)</span>
+            </div>
+            <div class="kpi-card orange">
+                <span class="kpi-value">~1 FTE Saved</span>
+                <span class="kpi-label">Cắt giảm 28.670 phút/tháng (~30% tổng thời gian toàn phòng ban)</span>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <img src="hinh/Optimal_Triumph/phan1.png" alt="P1 Report Optimization Overview" class="project-img">
+        </div>
+        <br /><br /><br />
+
+        <!-- PHẦN 2: KHÁM PHÁ HIỆN TRẠNG & PHÂN TÍCH PARETO -->
+        <label class="highlight-textttt">2. Chẩn đoán Định lượng Hiện trạng & Phân tích Pareto (AS-IS Diagnostic)</label><br /><br />
+        <p>Bằng phương pháp chuẩn hóa dữ liệu vận hành thành các <b>Work Elements</b> độc lập, phân tích hiện trạng đã chỉ ra hai nghịch lý lớn trong cách thức vận hành của phòng ban:</p>
+        <ul>
+            <li><b>Quy luật Pareto 88.7/11.3:</b> Trong tổng số 52 báo cáo, chỉ riêng <b>Top 6 báo cáo</b> đã chiếm tới <b>88.7% tổng thời gian làm việc (35.972 / 40.550 phút/tháng)</b> qua 142 bước công việc. 46 báo cáo còn lại chỉ đóng góp 11.3% thời lượng.</li>
+            <li><b>Điểm nghẽn phương thức thao tác (Method Breakdown):</b> Trong Top 6 báo cáo, có tới <b>92.83% thời gian là thao tác thủ công (Manual - 33.394 phút)</b> và <b>2.82% là Copy-Paste (1.013 phút)</b>. Tổng cộng <b>95.7% thời gian</b> bị lãng phí vào các thao tác lặp lại, trong khi tỷ lệ tự động hóa hiện hữu chỉ chiếm vỏn vẹn <b>~1% (344 phút)</b>.</li>
+        </ul>
+
+        <p>Bảng phân bổ chi tiết khối lượng công việc Top 6 báo cáo trọng yếu:</p>
+        
+        <div class="table-responsive">
+            <table class="project-table">
+                <thead>
+                    <tr>
+                        <th>Tên Báo Cáo (Top 6 Reports)</th>
+                        <th>Thời Lượng (Phút/Tháng)</th>
+                        <th>Tỷ Lệ Thủ Công (Manual %)</th>
+                        <th>Phương Thức Chính</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>1. Allocate RM Status</b> (from MSR Master new)</td>
+                        <td><b>24.960</b></td>
+                        <td class="text-orange">98.72%</td>
+                        <td>Manual Data Allocation & Email</td>
+                    </tr>
+                    <tr>
+                        <td><b>2. Alteration Report</b></td>
+                        <td><b>4.818</b></td>
+                        <td>82.65%</td>
+                        <td>Manual, Copy-Paste, Access, Formulas</td>
+                    </tr>
+                    <tr>
+                        <td><b>3. ++SMS RM Report</b></td>
+                        <td><b>2.132</b></td>
+                        <td>89.49%</td>
+                        <td>Manual Processing & Excel Formula</td>
+                    </tr>
+                    <tr>
+                        <td><b>4. Monthly RMs Surplus Report</b> (TIV + VIE)</td>
+                        <td><b>1.630</b></td>
+                        <td>94.48%</td>
+                        <td>Manual Verification & Copy-Paste</td>
+                    </tr>
+                    <tr>
+                        <td><b>5. MSR Master Report</b></td>
+                        <td><b>1.332</b></td>
+                        <td>52.73%</td>
+                        <td>Excel Formula (VLOOKUP 200k rows) & Copy</td>
+                    </tr>
+                    <tr>
+                        <td><b>6. MSR Master New</b></td>
+                        <td><b>1.100</b></td>
+                        <td>55.86%</td>
+                        <td>Copy-Paste, Automated & Manual</td>
+                    </tr>
+                    <tr style="background: #eef2f5; font-weight: bold;">
+                        <td>TỔNG CỘNG TOP 6 (Chiếm 88.7% Phòng Ban)</td>
+                        <td class="text-green">35.972 Phút</td>
+                        <td class="text-orange">92.83% Manual</td>
+                        <td>Cơ hội tối ưu hóa trọng tâm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="video-container">
+            <img src="hinh/Optimal_Triumph/phan2.png" alt="Pareto and Method Breakdown" class="project-img">
+        </div>
+        <br /><br /><br />
+
+        <!-- PHẦN 3: ĐỊNH HÌNH GIẢI PHÁP & PHÂN BỔ CÔNG CỤ -->
+        <label class="highlight-textttt">3. Định hướng Giải pháp & Phân bổ Công nghệ (Solution Strategy)</label><br /><br />
+        <p>Dựa trên kết quả phân tích phương thức, tôi đã đề xuất chiến lược loại bỏ thao tác lặp lại và định hướng công cụ tự động hóa trực tiếp cho <b>142 Work Elements</b> thuộc Top 6 báo cáo:</p>
+        <ul>
+            <li><b>VBA Macro Engine (Trọng tâm cốt lõi):</b> Đảm nhận <b>117 bước công việc (82.39%)</b>, giúp giải phóng trực tiếp <b>35.101 phút/tháng (97.58% thời lượng Top 6)</b> thông qua xử lý mảng dữ liệu RAM và tự động hóa bảng tính tốc độ cao.</li>
+            <li><b>Power Automate Flow:</b> Đảm nhận <b>11 bước công việc (7.75%)</b>, tự động hóa <b>527 phút/tháng</b> cho các khâu gửi email báo cáo, dispatch thông báo định kỳ qua Outlook.</li>
+            <li><b>Tối ưu quy trình sẵn có:</b> Giữ lại và chuẩn hóa 14 bước công việc (9.86%) mang tính phán đoán nghiệp vụ trực tiếp của Report Owners.</li>
+        </ul>
+
+        <div class="video-container">
+            <img src="hinh/Optimal_Triumph/phan3.png" alt="Key Direction and Expected Outcomes" class="project-img">
+        </div>
+        <br /><br /><br />
+
+        <!-- PHẦN 4: HỆ SINH THÁI TỰ ĐỘNG HÓA 4 TRỤ CỘT -->
+        <label class="highlight-textttt">4. Kiến trúc Hệ thống Tự động hóa 4 Trụ cột (Automation Ecosystem)</label><br /><br />
+        <p>Hệ thống chuyển đổi được xây dựng dựa trên sự phối hợp chặt chẽ giữa 4 công cụ chuyên biệt để triệt tiêu toàn diện các mắt xích thủ công:</p>
+        
+        <p><b>1. Power Query (ETL & Chuẩn hóa dữ liệu nguồn):</b><br/>
+        • Tự động quét và hợp nhất dữ liệu từ nhiều thư mục nguồn phân tán (Auto-scan & merge all files).<br/>
+        • Tự động lọc bỏ các cột dữ liệu thừa và xử lý làm sạch kiểu dữ liệu thô (Clean redundant columns & standardize raw data).</p>
+
+        <p><b>2. VBA Engine (Tính toán tốc độ cao & Giao diện bảng tính):</b><br/>
+        • Tự động khởi tạo Pivot Table và tổng hợp dữ liệu chỉ bằng 1 nút bấm (1-click Pivot Table creation).<br/>
+        • Xử lý format màu sắc, căn chỉnh giao diện báo cáo chuẩn quy cách và xuất dữ liệu cuối cùng tức thì.</p>
+
+        <p><b>3. Power BI (Trực quan hóa & Báo cáo Quản trị cấp cao):</b><br/>
+        • Kết nối trực tiếp vào nguồn Master Data, tự động làm mới các Executive Dashboards theo thời gian thực.<br/>
+        • Triệt tiêu hoàn toàn nhu cầu tạo các sheet tính phụ và tệp dữ liệu trung gian (Eliminate helper & intermediate sheets).</p>
+
+        <p><b>4. Power Automate (Tự động hóa luồng phân phối):</b><br/>
+        • Tự động gửi báo cáo hoàn tất đến các bên liên quan qua Outlook/Gmail theo đúng lịch trình định kỳ.<br/>
+        • Tự động gửi thông báo điều phối, tiết kiệm 100% thời gian soạn và đính kèm email thủ công.</p>
+
+        <div class="video-container">
+            <img src="hinh/Optimal_Triumph/phan4.png" alt="4-Pillar Automation Tool Architecture" class="project-img">
+        </div>
+        <br /><br /><br />
+
+        <!-- PHẦN 5: CHUẨN HÓA SOP & QUẢN TRỊ THAY ĐỔI -->
+        <label class="highlight-textttt">5. Chuẩn hóa Vận hành & Quản trị Thay đổi (Change Management & Rollout)</label><br /><br />
+        <p>Để đảm bảo 12 Report Owners và các nhóm nghiệp vụ tiếp nhận quy trình mới một cách dễ dàng và đồng nhất:</p>
+        <ul>
+            <li><b>Quy chuẩn 1-Click SOP:</b> Xây dựng tài liệu hướng dẫn vận hành chuẩn tinh gọn cho từng báo cáo, chuyển đổi toàn bộ quy trình phức tạp thành thao tác nạp file vào thư mục và nhấn <b>1-Click Run/Refresh</b>.</li>
+            <li><b>Kiểm thử song song & Đối soát (Parallel Testing):</b> Thực hiện chạy thử nghiệm song song hệ thống mới cùng quy trình cũ trong nhiều chu kỳ báo cáo để đảm bảo tính toàn vẹn và độ chính xác 100% số liệu.</li>
+            <li><b>Cơ chế bẫy lỗi ngoại lệ (Exception Handling):</b> Các dòng dữ liệu thiếu mã, hàng nội địa hoặc đơn ưu tiên đặc thù được tự động trích xuất ra bảng riêng để nhân viên chỉ cần tập trung xử lý đúng các trường hợp ngoại lệ trong vài phút.</li>
+        </ul>
+
+        <div class="video-container">
+            <video id="videoMSR1" controls autoplay muted loop playsinline>
+                <source src="video/phan5.mp4" type="video/mp4">
+            </video>
+        </div>
+        <br /><br /><br />
+
+        <!-- PHẦN 6: KẾT QUẢ ĐỊNH LƯỢNG & TÁC ĐỘNG DOANH NGHIỆP -->
+        <label class="highlight-textttt">6. Kết quả Định lượng & Tác động Doanh nghiệp (Targeted Business Impact)</label><br /><br />
+        <p>Bảng tổng hợp kết quả cải tiến vượt bậc trên quy mô toàn bộ hệ thống báo cáo phòng ban P1:</p>
+
+        <div class="table-responsive">
+            <table class="project-table">
+                <thead>
+                    <tr>
+                        <th>Chỉ Số Đánh Giá (Key Metrics)</th>
+                        <th>Hiện Trạng Ban Đầu (AS-IS)</th>
+                        <th>Mục Tiêu Sau Tối Ưu (TO-BE)</th>
+                        <th>Tác Động Cải Tiến (Impact)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Tổng thời gian làm báo cáo</b></td>
+                        <td>40.550 phút / tháng (676 giờ)</td>
+                        <td class="text-green"><b>28.670 phút / tháng</b></td>
+                        <td class="text-green"><b>Tiết kiệm ~30% (~1 FTE)</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Tổng số bước công việc</b></td>
+                        <td>463 Work Elements</td>
+                        <td class="text-green"><b>335 Work Elements</b></td>
+                        <td class="text-green"><b>Cắt giảm ~27% bước thao tác</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Tỷ lệ tự động hóa Top 6 báo cáo</b></td>
+                        <td>0.96% (~1% thời lượng)</td>
+                        <td class="text-blue"><b>> 97% tự động hóa</b></td>
+                        <td class="text-blue"><b>Chuyển đổi số toàn diện</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Thao tác thủ công & Copy-Paste</b></td>
+                        <td>95.7% tổng thời gian (34.407 phút)</td>
+                        <td class="text-blue"><b>1-Click Macro & Auto-Flow</b></td>
+                        <td class="text-blue"><b>Triệt tiêu lãng phí thao tác</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Hệ thống giám sát cấp Quản lý</b></td>
+                        <td>Bảng tính Excel rời rạc qua email</td>
+                        <td class="text-orange"><b>Power BI Executive Dashboard</b></td>
+                        <td class="text-orange"><b>Real-time & Single Source of Truth</b></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="video-container">
+            <video id="videoMSR2" controls autoplay muted loop playsinline>
+                <source src="video/phan7.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br />
+
+    <!-- PHẦN LIÊN HỆ VÀ FOOTER -->
+    <div class="boxess">
+        <div class="boxx">
+            <div class="boxx-text">
+                <p class="highlight-textt">BẮT ĐẦU DỰ ÁN MỚI?</p>
+                <label class="highlight-texttt">
+                    Bạn đang có một ý tưởng tuyệt vời và muốn cùng hợp tác? <br />
+                    Ta nên sắp xếp một cuộc gặp mặt. Liên lạc nha
+                </label>
+            </div>
+            <button class="view-project" onclick="sendEmail()">🤙 Let's do this</button>
+        </div>
+    </div>
+
+    <section id="aboutt">
+        <div class="logo">
             <a href="index.html">
                 <img src="hinh/chu ky K trang.png" alt="Thiết kế" class="logo-image">
             </a>
@@ -354,18 +653,15 @@ function showProject4() {
         <div class="boxesss">
             <div class="boxxx">
                 <button class="view-projectt" onclick="sendEmail()"></button>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://www.linkedin.com/in/thái-kha-23a08a366/" target="_blank">
                     <button class="view-projecttt"></button> 
                 </a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://www.facebook.com/thai.kha.698629" target="_blank">
                     <button class="view-projectttt"></button> 
                 </a>
             </div>
         </div>
-        <br/>
-        <p><Label class="highlight-textt">Handcrafted by me</Label></p>
+        <p class="highlight-textt">Handcrafted by me</p>
     </section>
     `;
     window.scrollTo(0, 0);
